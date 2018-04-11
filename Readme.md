@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Kristina SHkatulova](https://up.htmlacademy.ru/adaptive/14/user/603197).
-* Наставник: `Неизвестно`.
+* Наставник: `Елена Забара`.
 
 ---
 
