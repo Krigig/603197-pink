@@ -5,8 +5,144 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
+     <header class="page-header">
+      <a class="page-header__logo">Pink</a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+      <h1 class="visually-hidden">Приложение Pink</h1>
 
+      <section class="app">
+          <h2 class="visually-hidden">Скачать приложение</h2>
+          <img src="http://placehold.it/150x100" alt="Приложение в действии">
+          <a class="app__btn" href="#">Скачать приложение </a>
+          <ul class="app__systems systems">
+            <li class="systems__apple">
+              <a class="systems__link" href="#">Apple</a>
+            </li>
+            <li class="systems__android">
+              <a class="systems__link" href="#">Android</a>
+            </li>
+            <li class="systems__windows">
+              <a class="systems__link" href="#">Windows</a>
+            </li>
+          </ul>
+          <p class="app__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+      <section class="proposal">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <p class="proposal__intro">Устали от серости мегаполиса?</p>
+        <p class="proposal__intro">Нам есть, что вам предложить!</p>
+        <ul class="proposal__list">
+          <li class="proposal__item">
+            <h3 class="proposal__title">Поднимает настроение</h3>
+            <p class="proposal__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="proposal__item">
+            <h3 class="proposal__title">Меняет мир вокруг</h3>
+            <p class="proposal__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="proposal__item">
+            <h3 class="proposal__title">Заводит новых друзей</h3>
+            <p class="proposal__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <img src="http://placehold.it/150x100" alt="Всем привет!">
+          </li>
+        </ul>
+      </section>
+      <section class="reivew">
+        <div class="reivew__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+           <ul class="reivew__list slider__list">
+            <li class="reivew__item slider__item">
+              <h3 class="reivew__author">Николай Петров</h3>
+              <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reivew__item slider__item">
+              <h3 class="reivew__author">Николай Петров</h3>
+              <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="reivew__item slider__item">
+              <h3 class="reivew__author">Николай Петров</h3>
+              <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+           </ul>
+           <p class="reivew__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+           </p>
+        </div>
+      </section>
+      <section class="price">
+        <div class="price__wrapper slider">
+          <h2 class="visually-hidden">Пакеты услуг и цены</h2>
+          <table class="price__list">
+            <tr>
+              <th class="price__value"></th>
+              <th class="price__value">Стандарт 3,99 USD</th>
+              <th class="price__value"></th>
+            </tr>
+            <tr>
+              <td class="price__description">Розовый фильтр</td>
+              <td class="price__description">Смайлики</td>
+              <td class="price__description">Комментарии</td>
+            </tr>
+             <tr>
+              <td class="price__description">Розовый фильтр</td>
+              <td class="price__description">Смайлики</td>
+              <td class="price__description">Комментарии</td>
+            </tr>
+             <tr>
+              <td class="price__description">Розовый фильтр</td>
+              <td class="price__description">Смайлики</td>
+              <td class="price__description">Комментарии</td>
+            </tr>
+          </table>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__title">Звоните:</h3>
+              <a class="contacts__phone" href="tel">+7 (812) 555-66-66</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__title">Пишите:</h3>
+              <p class="contacts__description">mail@htmlacademy.ru</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__title">Приезжайте в гости:</h3>
+              <p class="contacts__description">ул. Большая Конбшенная, 19/8</p>
+            </li>
+          </ul>
+          <img src="http://placehold.it/150x100" alt="ул. Большая Конбшенная, 19/8">
+        </div>
+      </section>
+    </main>
   </body>
 </html>
