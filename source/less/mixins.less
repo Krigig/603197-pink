@@ -1,0 +1,44 @@
+.visually-hidden() {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.link() {
+  text-decoration: none;
+}
+
+.li() {
+  list-style: none;
+}
+
+.nav-font() {
+  font-size: @font-size;
+  line-height: @font-line;
+  text-transform: @font-transform;
+
+  color: @font-color;
+}
+
+.font(@font-size, @line-height) {
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+.back-mobile() {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.back-mobile-app() {
+  background-image: url("../img/iphone-screen-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+

@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-     <header class="page-header">
-      <a class="page-header__logo">Pink</a>
+    <header class="page-header">
+      <a class="page-header__logo"><span class="visually-hidden">Pink</span><img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
@@ -31,16 +32,16 @@
 
       <section class="app">
           <h2 class="visually-hidden">Скачать приложение</h2>
-          <img src="http://placehold.it/150x100" alt="Приложение в действии">
+          <img src="img/iphone-hand-mobile@1x.png" alt="Приложение в действии" width="258" height="286">
           <a class="app__btn" href="#">Скачать приложение </a>
           <ul class="app__systems systems">
-            <li class="systems__apple">
+            <li class="systems__item systems__item--apl">
               <a class="systems__link" href="#">Apple</a>
             </li>
-            <li class="systems__android">
+            <li class="systems__item systems__item--and">
               <a class="systems__link" href="#">Android</a>
             </li>
-            <li class="systems__windows">
+            <li class="systems__item systems__item--win">
               <a class="systems__link" href="#">Windows</a>
             </li>
           </ul>
@@ -62,14 +63,14 @@
           <li class="proposal__item">
             <h3 class="proposal__title">Заводит новых друзей</h3>
             <p class="proposal__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            <img src="http://placehold.it/150x100" alt="Всем привет!">
+            <img src="img/iphone-screen-mobile@1x.png" alt="Всем привет!" width="157" height="320">
           </li>
         </ul>
       </section>
       <section class="reivew">
         <div class="reivew__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
-           <ul class="reivew__list slider__list">
+          <ul class="reivew__list slider__list">
             <li class="reivew__item slider__item">
               <h3 class="reivew__author">Николай Петров</h3>
               <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -82,12 +83,12 @@
               <h3 class="reivew__author">Николай Петров</h3>
               <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-           </ul>
-           <p class="reivew__toggles slider__toggles">
+          </ul>
+          <p class="reivew__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
-           </p>
+          </p>
         </div>
       </section>
       <section class="price">
@@ -96,22 +97,22 @@
           <table class="price__list">
             <tr>
               <th class="price__value"></th>
-              <th class="price__value">Стандарт 3,99 USD</th>
+              <th class="price__value"><span class="price__name">Стандарт</span> 3,99 USD</th>
               <th class="price__value"></th>
             </tr>
             <tr>
               <td class="price__description">Розовый фильтр</td>
-              <td class="price__description">Смайлики</td>
-              <td class="price__description">Комментарии</td>
-            </tr>
-             <tr>
               <td class="price__description">Розовый фильтр</td>
-              <td class="price__description">Смайлики</td>
-              <td class="price__description">Комментарии</td>
-            </tr>
-             <tr>
               <td class="price__description">Розовый фильтр</td>
+            </tr>
+            <tr>
               <td class="price__description">Смайлики</td>
+              <td class="price__description">Смайлики</td>
+              <td class="price__description">Смайлики</td>
+            </tr>
+            <tr>
+              <td class="price__description">Комментарии</td>
+              <td class="price__description">Комментарии</td>
               <td class="price__description">Комментарии</td>
             </tr>
           </table>
@@ -140,7 +141,7 @@
               <p class="contacts__description">ул. Большая Конбшенная, 19/8</p>
             </li>
           </ul>
-          <img src="http://placehold.it/150x100" alt="ул. Большая Конбшенная, 19/8">
+          <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конбшенная, 19/8" width="320" height="200">
         </div>
       </section>
     </main>
