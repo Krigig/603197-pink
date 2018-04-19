@@ -9,25 +9,27 @@
   border: 0;
 }
 
+.font(@font-size, @line-height) {
+  font-size: @font-size;
+  line-height: @line-height;
+}
+
+.size(@width; @height) {
+  width: @width;
+  height: @height;
+}
+
+.min-size(@width; @height) {
+  width: @width;
+  min-height: @height;
+}
+
 .link() {
   text-decoration: none;
 }
 
 .li() {
   list-style: none;
-}
-
-.nav-font() {
-  font-size: @font-size;
-  line-height: @font-line;
-  text-transform: @font-transform;
-
-  color: @font-color;
-}
-
-.font(@font-size, @line-height) {
-  font-size: @font-size;
-  line-height: @line-height;
 }
 
 .back-img() {
