@@ -6,17 +6,18 @@
     background-color: @main-bg-color;
   }
 }
+
 .form__items {
   padding: 0;
 }
 
 .form__caption {
   padding: 0;
+  padding-top: 50px;
 
   .font(14px; 18px);
-  color: @!important;
-  text-transform: @text-transform;
-
+  color: @important;
+  text-transform: @font-transform;
 }
 
 .form__item {
@@ -47,16 +48,26 @@
 }
 
 .form__value {
-  padding-right: 90px;
+  padding-left: 90px;
   .font(18px; 30px);
   color: @nav-color;
 }
 
 .form__text-emotion {
+  display: block;
+  width: 280px;
+  min-height: 200px;
+  resize: none;
+
   .font(18px; 30px);
+  color: @nav-color;
+  border: 2px solid #e5e5e5;
+}
+
+.form__text-emotion::-webkit-input-placeholder {
   color: @nav-color;
 }
 
-.form-send {
+.form__send {
   .btn-form;
 }
