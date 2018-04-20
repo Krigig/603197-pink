@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-     <header class="page-header">
-      <a class="page-header__logo">Pink</a>
+    <header class="page-header">
+      <a class="page-header__logo"><span class="visually-hidden">Pink</span><img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
@@ -27,14 +28,16 @@
     </header>
     <main class="page-main">
       <section class="contest">
-        <h1 class="contest__intro">Фотографии пользователей</h1>
+        <div class="contest__wrapper">
+          <h1 class="contest__intro">Фотографии пользователей</h1>
+        </div>
+        <p class="contest__description">Взгляните на фотографии, которые выкладывают пользователи! Видите как нехватает ваших?</p>
       </section>
       <section class="photo">
         <h2 class="visually-hidden">Фотогалерея</h2>
-        <p class="photo__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите как нехватает ваших?</p>
         <ul class="photo__items">
-          <li class="photo__item">
-              <a class="photo__link" href="#"><img src="http://placehold.it/150x100" alt="Фото пользователя"></a>
+          <li class="photo__item photo__item--panorama">
+              <a class="photo__link" href="#"><img src="img/panorama-mobile@1x.jpg" alt="Фото пользователя" width="320" height="137"></a>
               <blockquote class="photo__post">
               <cite class="photo__author-name">Анна <span class="photo__time">(5 минут назад)</span></cite>
               <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
@@ -42,7 +45,7 @@
             <p class="photo__likes">Нравится: 215</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img src="http://placehold.it/150x100" alt="Фото пользователя"></a>
+              <a class="photo__link" href="#"><img src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Левон <span class="photo__time">(5 часов назад)</span></cite>
               <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -50,7 +53,7 @@
             <p class="photo__likes">Нравится: 356</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img src="http://placehold.it/150x100" alt="Фото пользователя"></a>
+              <a class="photo__link" href="#"><img src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Антон <span class="photo__time">(12 часов назад)</span></cite>
               <p class="photo__text">Соседи будут рады!</p>
@@ -58,7 +61,7 @@
             <p class="photo__likes">Нравится: 666</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img src="http://placehold.it/150x100" alt="Фото пользователя"></a>
+              <a class="photo__link" href="#"><img src="img/photo-window-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Борис <span class="photo__time">(20 часов назад)</span></cite>
               <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -66,7 +69,7 @@
             <p class="photo__likes">Нравится: 215</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img src="http://placehold.it/150x100" alt="Фото пользователя"></a>
+              <a class="photo__link" href="#"><img src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Сергей <span class="photo__time">(25 часов назад)</span></cite>
               <p class="photo__text">Самай кубанская в мире!</p>
@@ -74,15 +77,16 @@
             <p class="photo__likes">Нравится: 4</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img src="http://placehold.it/150x100" alt="Фото пользователя"></a>
+              <a class="photo__link" href="#"><img src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
+              <div class="photo__wrapper">
             <blockquote class="photo__post">
-              <cite class="photo__author-name">Максим <span class="photo__time">(40 часов назад)</span></cite>
+              <cite class="photo__author-name">Максим<span class="photo__time">(40 часов назад)</span></cite>
               <p class="photo__text">Где снег-то?</p>
             </blockquote>
             <p class="photo__likes">Нравится: 150</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img src="http://placehold.it/150x100" alt="Фото пользователя"></a>
+              <a class="photo__link" href="#"><img src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Надежда <span class="photo__time">(45 часов назад)</span></cite>
               <p class="photo__text">Всем GM и взаимные лайки!</p>
@@ -94,46 +98,46 @@
       <section class="photo-upload">
         <h2 class="visually-hidden">Форма для фото</h2>
         <p class="photo-upload__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="photo-upload__form upload-form">
-          <img src="http://placehold.it/150x100" alt="Ваше фото">
-          <ul class="upload-form__items">
+        <div class="photo-upload__form">
+          <img src="img/photo-road-mobile@1x.jpg" alt="Ваше фото" width="280" height="374">
+          <ul class="photo-upload__items">
             <li class="upload-form__item">
-              <a class="upload-form__editor" href="#">Обрезать</a>
+              <a class="photo-upload__editor" href="#">Обрезать</a>
             </li>
-            <li class="upload-form__item">
-              <a class="upload-form__editor" href="#">Залить</a>
+            <li class="photo-upload__item">
+              <a class="photo-upload__editor" href="#">Залить</a>
             </li>
-            <li class="upload-form__item">
-              <a class="upload-form__editor" href="#">Яркость</a>
+            <li class="photo-upload__item">
+              <a class="photo-upload__editor" href="#">Яркость</a>
             </li>
-            <li class="upload-form__item">
-              <a class="upload-form__editor" href="#">Интенсивность</a>
+            <li class="photo-upload__item">
+              <a class="photo-upload__editor" href="#">Интенсивность</a>
             </li>
           </ul>
-          <button type="button" class="upload-form__send">Запостить</button>
-          <button type="button" class="upload-form__esc">Отмена</button>
+          <button type="button" class="photo-upload__btn photo-upload__btn--send">Запостить</button>
+          <button type="button" class="photo-upload__btn photo-upload__btn--esc">Отмена</button>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <img src="http://placehold.it/150x100" alt="Pink">
+      <img src="img/logo-pink-blue-mobile.svg" alt="Pink" width="146.3px" height="40.375px">
       <div class="page-footer__social social">
-       <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-      </ul>
-     </div>
-     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-     </div>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
     </footer>
   </body>
 </html>
