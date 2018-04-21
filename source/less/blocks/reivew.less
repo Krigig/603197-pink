@@ -5,10 +5,62 @@
 }
 
 .reivew__description {
+  margin-bottom: 100px;
+
   .font(14px; 30px);
   color: @nav-color;
 }
 
+.reivew__list {
+  .ul;
+  padding: 0 20px;
+}
+
 .reivew__item {
-  .li;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.reivew__author-person {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reivew__item {
+    margin: 0 auto;
+    max-width: @tablet-width;
+  }
+
+  .reivew__author {
+    margin: 0;
+    margin-top: 35px;
+    order: 1;
+    .font(20px; 30px);
+  }
+
+  .reivew__description {
+    margin: 0;
+    .font(18px; 30px);
+  }
+
+  .reivew__author-person {
+    margin: 0;
+    margin-bottom: 100px;
+
+    display: block;
+    .font(14px; 30px);
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reivew__list {
+    padding: 0 130px;
+  }
+
+  .reivew__item {
+    max-width: @desktop-width;
+  }
 }

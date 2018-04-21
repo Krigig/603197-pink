@@ -1,17 +1,47 @@
-
 .page-header {
   background-color: @nav-color;
 }
 
-.site-list__item {
-  .li;
+.page-header__container {
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.site-list__link {
-  .font(18px; 32px);
-  text-transform: uppercase;
+.page-header__logo {
+  padding: 20px;
+  height: 68px;
+  box-sizing: border-box;
+}
 
-  color: @font-color;
-  .link;
-  font-weight: bold;
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    padding-top: 40px;
+    height: 109px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    background-color: rgba(0, 0, 0, 0.15);
+    margin-bottom: -109px;
+  }
+
+  .page-header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 0 130px;
+    height: 109px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__logo {
+    padding: 0;
+    width: 150px;
+    height: 25px;
+  }
 }
