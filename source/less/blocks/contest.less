@@ -1,17 +1,72 @@
 .contest__wrapper {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  .back-img;
   height: 237px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
   background-color: @app-background;
 }
 
 .contest__intro {
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+
   font-size: 24px;
   color: @font-color;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .contest__description {
+  padding: 0 20px;
+  margin: 50px auto;
+
   .font(14px; 30px);
   color: @nav-color;
+  text-align: center;
+
+  &--vh {
+    display: none;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .contest__wrapper {
+    height: 336px;
+    background-position: center center;
+  }
+
+  .contest__intro {
+    max-width: @tablet-width;
+    font-size: 50px;
+  }
+
+  .contest__description {
+    max-width: @tablet-width;
+    margin: 90px auto 75px;
+
+    .font(18px; 30px);
+
+    &--vh {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest__wrapper {
+    height: 394px;
+  }
+
+  .contest__intro {
+    max-width: @desktop-width;
+    padding: 0 130px;
+    box-sizing: border-box;
+  }
 }
