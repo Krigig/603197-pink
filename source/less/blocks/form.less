@@ -1,5 +1,6 @@
 .form__block {
-  padding: 20px;
+  padding: 0;
+  margin-bottom: 20px;
   border: none;
 
   &--bg-color {
@@ -10,11 +11,6 @@
 
 .form__items {
   .ul;
-}
-
-.form {
-  max-width: 320px;
-  margin: 0 auto;
 }
 
 .form__caption {
@@ -53,7 +49,7 @@
 }
 
 .form__value {
-  padding-left: 90px;
+  padding-left: 80px;
   .font(18px; 30px);
   color: @nav-color;
 }
@@ -85,20 +81,18 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form {
-    max-width: @tablet-width;
-  }
-
   .form__field {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 20px;
+
+    margin-bottom: 50px;
   }
 
   .form__block {
     padding: 20px 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
     border: 2px solid @border-color;
     background-color: transparent;
 
@@ -166,19 +160,16 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form {
-    max-width: @desktop-width;
-  }
-
   .form__field {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 130px;
+    align-content: flex-start;
+    align-items: flex-start;
   }
 
   .form__block {
-    padding: 20px 0;
+    margin-bottom: 50px;
 
     &--grow {
       flex-grow: 1;

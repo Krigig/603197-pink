@@ -3,8 +3,6 @@
 }
 
 .page-header__container {
-  padding: 0 20px;
-
   display: flex;
   flex-direction: column;
 }
@@ -24,17 +22,17 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.15);
-    margin-bottom: -109px;
+    position: absolute;
+    z-index: 10;
   }
 
   .page-header__container {
-    max-width: @desktop-width;
+    max-width: @site-destkop-width;
     margin: 0 auto;
-    box-sizing: border-box;
-
-    padding: 0 130px;
     height: 109px;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +40,6 @@
 
   .page-header__logo {
     padding: 0;
-    width: 150px;
-    height: 25px;
+    .size(150px; 25px);
   }
 }

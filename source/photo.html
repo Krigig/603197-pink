@@ -8,7 +8,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__container">
-        <a class="page-header__logo"><span class="visually-hidden">Pink</span><img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22"></a>
+        <a class="page-header__logo" href="index.html"><span class="visually-hidden">Pink</span><img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22"></a>
         <nav class="site-list">
           <button class="site-list__toggle" type="button">Открыть меню</button>
           <ul class="site-list__items">
@@ -37,15 +37,19 @@
       </section>
       <section class="photo">
         <h2 class="visually-hidden">Фотогалерея</h2>
-        <ul class="photo__items">
-          <li class="photo__item photo__item--panorama">
-              <a class="photo__link" href="#"><img class="photo__img photo__img--panorama" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя" width="320" height="137"></a>
-              <blockquote class="photo__post">
-              <cite class="photo__author-name">Анна <span class="photo__time">(5 минут назад)</span></cite>
-              <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            </blockquote>
-            <p class="photo__likes">Нравится: 215</p>
-          </li>
+        <div class="photo__panorama">
+          <a class="photo__link" href="#"><img class="photo__img-panorama" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя" width="320" height="137"></a>
+          <div class="container">
+            <div class="photo__wrapper">
+              <blockquote class="photo__post photo__post--panorama">
+                <cite class="photo__author-name">Анна <span class="photo__time">(5 минут назад)</span></cite>
+                <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              </blockquote>
+              <p class="photo__likes">Нравится: 215</p>
+            </div>
+          </div>
+        </div>
+        <ul class="photo__items container">
           <li class="photo__item">
               <a class="photo__link" href="#"><img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
             <blockquote class="photo__post">
@@ -79,8 +83,7 @@
             <p class="photo__likes">Нравится: 4</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img class="photo__img" src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
-              <div class="photo__wrapper">
+            <a class="photo__link" href="#"><img class="photo__img" src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Максим<span class="photo__time">(40 часов назад)</span></cite>
               <p class="photo__text">Где снег-то?</p>
@@ -99,39 +102,43 @@
       </section>
       <section class="photo-upload">
         <h2 class="visually-hidden">Форма для фото</h2>
-        <p class="photo-upload__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="container">
+          <p class="photo-upload__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
         <div class="photo-upload__form">
-          <div class="photo-upload__container">
-            <img class="photo-upload__img" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото" width="280" height="374">
-            <div class="photo-upload__nav">
-              <ul class="photo-upload__items">
-                <li class="upload-form__item">
-                  <a class="photo-upload__editor" href="#">Обрезать</a>
-                </li>
-                <li class="photo-upload__item">
-                  <a class="photo-upload__editor" href="#">Залить</a>
-                </li>
-                <li class="photo-upload__item">
-                  <a class="photo-upload__editor" href="#">Яркость</a>
-                </li>
-                <li class="photo-upload__item">
-                  <a class="photo-upload__editor" href="#">Интенсивность</a>
-                </li>
-              </ul>
-              <ul class="photo-upload__list">
-                <li>
-                  <button type="button" class="photo-upload__btn photo-upload__btn--send">Запостить</button>
-                </li>
-                <li>
-                  <button type="button" class="photo-upload__btn photo-upload__btn--esc">Отмена</button>
-                </li>
-              </ul>
+          <div class="container">
+            <div class="photo-upload__wrapper">
+              <img class="photo-upload__img" src="img/photo-road-mobile@1x.jpg" alt="Ваше фото" width="280" height="374">
+              <div class="photo-upload__nav">
+                <ul class="photo-upload__items">
+                  <li class="upload-form__item">
+                    <a class="photo-upload__editor" href="#">Обрезать</a>
+                  </li>
+                  <li class="photo-upload__item">
+                    <a class="photo-upload__editor" href="#">Залить</a>
+                  </li>
+                  <li class="photo-upload__item">
+                    <a class="photo-upload__editor" href="#">Яркость</a>
+                  </li>
+                  <li class="photo-upload__item">
+                    <a class="photo-upload__editor" href="#">Интенсивность</a>
+                  </li>
+                </ul>
+                <ul class="photo-upload__list">
+                  <li>
+                    <button type="button" class="photo-upload__btn photo-upload__btn--send">Запостить</button>
+                  </li>
+                  <li>
+                    <button type="button" class="photo-upload__btn photo-upload__btn--esc">Отмена</button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <img src="img/logo-pink-blue-mobile.svg" alt="Pink" width="146.3px" height="40.375px">
       <div class="page-footer__social social">
         <ul class="social__list">

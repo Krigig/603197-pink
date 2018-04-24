@@ -2,12 +2,7 @@
   background-color: @main-bg-color;
 }
 
-.photo-upload__container {
-  margin: 0 auto;
-  max-width: 320px;
-  padding: 0 20px;
-  box-sizing: border-box;
-
+.photo-upload__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,12 +52,11 @@
 
 @media (min-width: @tablet-width) {
   .photo-upload__intro {
-    max-width: @tablet-width;
+    margin: 70px auto;
     .font(18px; 30px);
   }
 
-  .photo-upload__container {
-    max-width: @tablet-width;
+  .photo-upload__wrapper {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -91,16 +85,10 @@
 
 @media (min-width: @desktop-width) {
   .photo-upload__form {
-    max-width: @desktop-width;
-    margin: 0 auto;
-    padding: 0 130px;
-    box-sizing: border-box;
-
     background-color: transparent;
   }
 
-  .photo-upload__container {
-    max-width: 940px;
+  .photo-upload__wrapper {
     background-color: @main-bg-color;
     padding: 0 60px 0 80px;
   }
@@ -119,7 +107,7 @@
     .size(183px; 55px);
 
     &--send {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }

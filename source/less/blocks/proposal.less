@@ -3,12 +3,12 @@
 }
 
 .proposal__intro-wrapper {
-  padding: 40px 20px;
+  margin: 40px 0;
 }
 
 .proposal__intro {
   margin: 0;
-  margin-bottom: 20px;
+
   font-size: 24px;
   color: @nav-color;
   font-weight: 300;
@@ -40,8 +40,6 @@
 }
 
 .proposal__container {
-  padding: 0 20px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,18 +51,25 @@
   align-items: center;
 }
 
+.proposal__imgs li {
+  overflow: hidden;
+  height: 277px;
+}
+
 .proposal__img {
   margin: 0 auto;
 }
 
 .proposal__img--vh,
-.proposal__info {
+.proposal__info-wrapper {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .proposal__intro-wrapper {
-    padding: 30px 20px;
+  .proposal__info-wrapper {
+    display: block;
+    background-color: @font-color;
+    padding-top: 50px;
   }
 
   .proposal__intro {
@@ -73,14 +78,9 @@
   }
 
   .proposal__container {
-    margin: 0 auto;
-    max-width: 650px;
-    box-sizing: border-box;
-
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
   }
 
   .proposal__imgs {
@@ -90,7 +90,7 @@
 
   .proposal__img {
     width: 265px;
-    height: 481px;
+    height: 550px;
     padding-right: 35px;
   }
 
@@ -98,22 +98,8 @@
     text-align: left;
   }
 
-  .proposal__info-wrapper {
-    background-color: @font-color;
-  }
-
-  .proposal__info-container {
-    max-width: 650px;
-    margin: 0 auto;
-  }
-
   .proposal__info {
-    display: block;
-
-    padding-top: 95px;
-    padding-left: 330px;
-    padding-right: 20px;
-    padding-bottom: 125px;
+    padding-left: 310px;
   }
 
   .proposal__info .proposal__title {
@@ -123,6 +109,10 @@
   .proposal__link {
     .font(14px; 24px);
     color: @important;
+  }
+
+  .proposal__imgs li {
+    height: 481px;
   }
 }
 
@@ -136,21 +126,21 @@
   }
 
   .proposal__container {
-    max-width: 1200px;
     flex-wrap: wrap;
-    padding: 0 130px;
   }
 
   .proposal__imgs {
     width: 100%;
-    padding-right: 0px;
+    padding-right: 0;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 50px;
   }
 
   .proposal__img {
     width: 186px;
-    height: 301px;
+    height: 350px;
     padding: 0 20px;
     margin-bottom: 50px;
   }
@@ -177,15 +167,15 @@
 
   .proposal__info-wrapper {
     background-color: transparent;
-  }
-
-  .proposal__info-container {
-    max-width: 1200px;
+    padding-top: 150px;
+    padding-bottom: 100px;
   }
 
   .proposal__info {
-    padding-left: 500px;
-    padding-top: 160px;
-    padding-right: 177px;
+    padding-left: 360px;
+  }
+
+  .proposal__imgs li {
+    height: 300px;
   }
 }
