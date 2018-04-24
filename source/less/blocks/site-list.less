@@ -30,6 +30,16 @@
   font-weight: bold;
 }
 
+.site-list .site-list__link {
+  &:hover {
+    color: @important;
+  }
+
+  &:active {
+    color: @important;
+    opacity: 0.3;
+  }
+}
 @media (min-width: @desktop-width) {
   .site-list__toggle {
     display: none;
@@ -54,5 +64,22 @@
     .font(18px; 18px);
     font-weight: normal;
     text-transform: none;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        bottom: -10px;
+        left: 0;
+
+        height: 3px;
+
+        background: #ffffff;
+      }
+    }
   }
 }

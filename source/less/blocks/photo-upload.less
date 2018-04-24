@@ -25,12 +25,22 @@
 
 .photo-upload__btn {
   .btn;
+  outline: none;
 
   &--send {
     margin-bottom: 12px;
 
     border-color: @important;
     color: @important;
+
+    &:hover {
+      color: @font-color;
+      background-color: @important;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &--esc {
@@ -39,6 +49,15 @@
     border-color: @nav-color;
     color: @nav-color;
     opacity: 0.1;
+
+    &:hover {
+      opacity: 0.3;
+    }
+
+    &:active {
+      background-color: @nav-color;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
