@@ -2,10 +2,18 @@
   margin-bottom: 45px;
 }
 
+.proposal__intro-wrapper {
+  margin: 40px 0;
+}
+
 .proposal__intro {
+  margin: 0;
+
   font-size: 24px;
   color: @nav-color;
   font-weight: 300;
+
+  text-align: center;
 }
 
 .proposal__title {
@@ -19,10 +27,155 @@
 }
 
 .proposal__list {
-  background-color: @main-bg-color;
+  .ul;
 }
 
 .proposal__item {
-  .li;
   color: @black;
+  text-align: center;
+}
+
+.proposal__wrapper {
+  background-color: @main-bg-color;
+}
+
+.proposal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proposal__imgs {
+  .ul;
+  display: flex;
+  align-items: center;
+}
+
+.proposal__imgs li {
+  overflow: hidden;
+  height: 277px;
+}
+
+.proposal__img {
+  margin: 0 auto;
+}
+
+.proposal__img--vh,
+.proposal__info-wrapper {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .proposal__info-wrapper {
+    display: block;
+    background-color: @font-color;
+    padding-top: 50px;
+  }
+
+  .proposal__intro {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+  .proposal__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .proposal__imgs {
+    order: -1;
+    flex-shrink: 0;
+  }
+
+  .proposal__img {
+    width: 265px;
+    height: 550px;
+    padding-right: 35px;
+  }
+
+  .proposal__item {
+    text-align: left;
+  }
+
+  .proposal__info {
+    padding-left: 310px;
+  }
+
+  .proposal__info .proposal__title {
+    .font(30px; 36px);
+  }
+
+  .proposal__link {
+    .font(14px; 24px);
+    color: @important;
+  }
+
+  .proposal__imgs li {
+    height: 481px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .proposal__img--vh {
+    display: block;
+  }
+
+  .proposal__intro {
+    font-size: 50px;
+  }
+
+  .proposal__container {
+    flex-wrap: wrap;
+  }
+
+  .proposal__imgs {
+    width: 100%;
+    padding-right: 0;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+  }
+
+  .proposal__img {
+    width: 186px;
+    height: 350px;
+    padding: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  .proposal__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .proposal__item {
+    width: 225px;
+    text-align: center;
+  }
+
+  .proposal__title {
+    margin: 0;
+    .font(30px; 30px);
+  }
+
+  .proposal__description {
+    .font(18px; 30px);
+  }
+
+  .proposal__info-wrapper {
+    background-color: transparent;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .proposal__info {
+    padding-left: 360px;
+  }
+
+  .proposal__imgs li {
+    height: 300px;
+  }
 }

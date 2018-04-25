@@ -3,88 +3,125 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"><span class="visually-hidden">Pink</span><img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22"></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__container">
+        <a class="page-header__logo"><span class="visually-hidden">Pink</span><img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22"></a>
+        <nav class="site-list">
+          <button class="site-list__toggle" type="button">Открыть меню</button>
+          <ul class="site-list__items">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
 
       <h1 class="visually-hidden">Приложение Pink</h1>
 
       <section class="app">
+        <div class="app__container container">
           <h2 class="visually-hidden">Скачать приложение</h2>
           <img class="app__img-iphone" src="img/iphone-hand-mobile@1x.png" alt="Приложение в действии" width="258" height="286">
-          <a class="app__btn" href="#">Скачать приложение</a>
-          <ul class="app__systems systems">
-            <li class="systems__item systems__item--apl">
-              <a class="systems__link" href="#">Apple</a>
-            </li>
-            <li class="systems__item systems__item--and">
-              <a class="systems__link" href="#">Android</a>
-            </li>
-            <li class="systems__item systems__item--win">
-              <a class="systems__link" href="#">Windows</a>
-            </li>
-          </ul>
-          <p class="app__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="app__info">
+            <p class="app__description">Взгляните на жизнь ярче!</p>
+            <a class="app__btn" href="#">Скачать приложение</a>
+            <ul class="app__systems systems">
+              <li class="systems__item systems__item--apl">
+                <a class="systems__link" href="#">Apple</a>
+              </li>
+              <li class="systems__item systems__item--and">
+                <a class="systems__link" href="#">Android</a>
+              </li>
+              <li class="systems__item systems__item--win">
+                <a class="systems__link" href="#">Windows</a>
+              </li>
+            </ul>
+            <p class="app__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
+        </div>
       </section>
       <section class="proposal">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="proposal__intro">Устали от серости мегаполиса?</p>
-        <p class="proposal__intro">Нам есть, что вам предложить!</p>
-        <ul class="proposal__list">
-          <li class="proposal__item">
-            <h3 class="proposal__title">Поднимает настроение</h3>
-            <p class="proposal__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="proposal__item">
-            <h3 class="proposal__title">Меняет мир вокруг</h3>
-            <p class="proposal__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="proposal__item">
-            <h3 class="proposal__title">Заводит новых друзей</h3>
-            <p class="proposal__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            <img src="img/iphone-screen-mobile@1x.png" alt="Всем привет!" width="157" height="320">
-          </li>
-        </ul>
+        <div class="proposal__intro-wrapper">
+          <p class="proposal__intro">Устали от серости мегаполиса?</p>
+          <p class="proposal__intro">Нам есть, что вам<br>предложить!</p>
+        </div>
+        <div class="proposal__wrapper">
+          <div class="proposal__container container">
+            <ul class="proposal__list">
+              <li class="proposal__item">
+                <h3 class="proposal__title">Поднимает настроение</h3>
+                <p class="proposal__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="proposal__item">
+                <h3 class="proposal__title">Меняет мир вокруг</h3>
+                <p class="proposal__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="proposal__item">
+                <h3 class="proposal__title">Заводит новых друзей</h3>
+                <p class="proposal__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+            <ul class="proposal__imgs">
+              <li>
+                <img class="proposal__img proposal__img--vh" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!" width="157" height="320">
+              </li>
+              <li>
+                <img class="proposal__img proposal__img--vh" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!" width="157" height="320">
+              </li>
+              <li>
+                <img class="proposal__img" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!" width="157" height="320">
+              </li>
+            </ul>
+          </div>
+          <div class="proposal__info-wrapper">
+            <div class="proposal__info-container container">
+              <div class="proposal__info">
+                <h2 class="proposal__title">Эффект на 24 часа!</h2>
+                <p class="proposal__description">Британские ученые провели исследования и доказали,<br>что положительный эффект от использования приложения длится целые сутки!</p>
+                <a href="#"  class="proposal__link">Узнать больше об исследовании</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="reivew">
         <div class="reivew__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
-          <ul class="reivew__list slider__list">
+          <ul class="reivew__list slider__list container">
             <li class="reivew__item slider__item">
               <h3 class="reivew__author">Николай Петров</h3>
+              <p class="reivew__author-person">25 лет, водитель трамвая</p>
               <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="reivew__item slider__item">
+            <li class="reivew__item slider__item visually-hidden">
               <h3 class="reivew__author">Николай Петров</h3>
+              <p class="reivew__author-person">25 лет, водитель трамвая</p>
               <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="reivew__item slider__item">
+            <li class="reivew__item slider__item visually-hidden">
               <h3 class="reivew__author">Николай Петров</h3>
+              <p class="reivew__author-person">25 лет, водитель трамвая</p>
               <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
-          <p class="reivew__toggles slider__toggles">
+          <p class="reivew__toggles slider__toggles visually-hidden">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
@@ -92,15 +129,18 @@
         </div>
       </section>
       <section class="price">
-        <div class="price__wrapper slider">
+        <div class="price__wrapper slider container">
           <h2 class="visually-hidden">Пакеты услуг и цены</h2>
+          <div class="price__see">
           <table class="price__list">
             <tr>
-              <th class="price__value"></th>
+              <th class="visually-hidden"></th>
+              <th class="price__value"><span class="price__name">База</span> 1,99 USD</th>
               <th class="price__value"><span class="price__name">Стандарт</span> 3,99 USD</th>
-              <th class="price__value"></th>
+              <th class="price__value"><span class="price__name">Анлим</span> 9,99 USD</th>
             </tr>
             <tr>
+              <td class="price__description">Розовый фильтр</td>
               <td class="price__description">Розовый фильтр</td>
               <td class="price__description">Розовый фильтр</td>
               <td class="price__description">Розовый фильтр</td>
@@ -109,22 +149,25 @@
               <td class="price__description">Смайлики</td>
               <td class="price__description">Смайлики</td>
               <td class="price__description">Смайлики</td>
+              <td class="price__description">Смайлики</td>
             </tr>
             <tr>
+              <td class="price__description">Комментарии</td>
               <td class="price__description">Комментарии</td>
               <td class="price__description">Комментарии</td>
               <td class="price__description">Комментарии</td>
             </tr>
           </table>
+        </div>
           <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button" id="btn-1">1</button>
+            <button class="slider__toggle" type="button" id="btn-2" checked>2</button>
+            <button class="slider__toggle" type="button" id="btn-3">3</button>
           </p>
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
           <ul class="contacts__list">
@@ -132,18 +175,38 @@
               <h3 class="contacts__title">Звоните:</h3>
               <a class="contacts__phone" href="tel">+7 (812) 555-66-66</a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item--order">
               <h3 class="contacts__title">Пишите:</h3>
               <p class="contacts__description">mail@htmlacademy.ru</p>
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Приезжайте в гости:</h3>
-              <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
+              <p class="contacts__description">ул. Большая<br>Конюшенная, 19/8</p>
             </li>
           </ul>
           <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конбшенная, 19/8" width="320" height="200">
         </div>
       </section>
+      <footer class="page-footer page-footer--index container">
+      <img src="img/logo-pink-blue-mobile.svg" alt="Pink" width="146.3px" height="40.375px">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
     </main>
   </body>
 </html>
