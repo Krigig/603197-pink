@@ -2,17 +2,13 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
 
-  background-size: 100% 395px;
+  background-size: 100% 462px;
 
   background-color: @app-background;
 }
 
 .app__container {
   min-height: 648px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
 }
 
 .app__description {
@@ -36,19 +32,28 @@
 }
 
 .app__intro {
+  margin: 0;
+
   .font(14px; 24px);
   font-weight: 300;
   text-align: center;
 }
 
 .app__info {
-  margin-bottom: 30px;
-
+  min-height: 213px;
+  padding-bottom: 30px;
   color: @font-color;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .app__img-iphone {
-  margin-bottom: 30px;
+  margin-top: 176px;
+  margin-bottom: 26px;
+  margin-left: -20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -59,6 +64,7 @@
   .app__container {
     min-height: 620px;
 
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
@@ -69,13 +75,6 @@
     width: 301px;
     padding-top: 45px;
     order: -1;
-    align-self: center;
-    flex-shrink: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     z-index: 10;
   }

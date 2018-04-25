@@ -9,11 +9,12 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__container">
-        <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
-          <div class="page-header__logo-wrapper">
+      <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
+        <div class="page-header__logo-wrapper">
+          <div class="page-header__logo-container container">
             <a class="page-header__logo"><span class="visually-hidden">Pink</span><img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22"></a>
           </div>
+        </div>
           <nav class="site-list">
             <button class="site-list__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="site-list__items">
@@ -31,7 +32,6 @@
               </li>
             </ul>
           </nav>
-        </div>
       </div>
     </header>
     <main class="page-main">
@@ -47,13 +47,13 @@
             <a class="app__btn" href="#">Скачать приложение</a>
             <ul class="app__systems systems">
               <li class="systems__item systems__item--apl">
-                <a class="systems__link" href="#">Apple</a>
+                <a class="systems__link" href="#"><span class="visually-hidden"> Apple</span></a>
               </li>
               <li class="systems__item systems__item--and">
-                <a class="systems__link" href="#">Android</a>
+                <a class="systems__link" href="#"><span class="visually-hidden">Android</span></a>
               </li>
               <li class="systems__item systems__item--win">
-                <a class="systems__link" href="#">Windows</a>
+                <a class="systems__link" href="#"><span class="visually-hidden">Windows</span></a>
               </li>
             </ul>
             <p class="app__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -163,7 +163,7 @@
             </tr>
           </table>
         </div>
-          <p class="price__toggles slider__toggles">
+          <p class="price__toggles slider__toggles visually-hidden">
             <button class="slider__toggle" type="button" id="btn-1">1</button>
             <button class="slider__toggle" type="button" id="btn-2" checked>2</button>
             <button class="slider__toggle" type="button" id="btn-3">3</button>
