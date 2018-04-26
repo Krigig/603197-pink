@@ -1,5 +1,4 @@
 .page-header__wrapper {
-  min-width: 280px;
   display: flex;
   flex-direction: column;
 }
@@ -14,7 +13,8 @@
 
 @media (max-width: @tablet-width-only) {
   .page-header__wrapper {
-  background-color: @nav-color;
+    min-width: 280px;
+    background-color: @nav-color;
   }
 
   .page-header__logo-wrapper {
@@ -45,6 +45,7 @@
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 11;
   }
 
   .page-header__wrapper--nojs .site-list__toggle {
@@ -71,6 +72,11 @@
     padding-top: 40px;
     height: 110px;
   }
+
+  .page-header__logo-wrapper {
+    height: 110px;
+    padding-top: 43px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -93,7 +99,9 @@
   }
 
   .page-header__logo-wrapper {
+    height: 25px;
     border: none;
+    padding: 0;
   }
   .page-header__logo {
     padding: 0;

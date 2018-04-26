@@ -62,7 +62,7 @@
   }
 
   .app__container {
-    min-height: 620px;
+    min-height: 730px;
 
     display: flex;
     flex-direction: row;
@@ -72,8 +72,10 @@
   }
 
   .app__info {
-    width: 301px;
-    padding-top: 45px;
+    width: 300px;
+    padding: 0;
+    min-height: 415px;
+    margin-bottom: 110px;
     order: -1;
 
     z-index: 10;
@@ -81,20 +83,20 @@
 
   .app__description {
     display: block;
+    margin: 0;
     width: 190px;
 
-    .font(40px, 1.3);
+    .font(40px, 1.2);
     font-weight: 300;
     text-align: center;
   }
 
   .app__img-iphone {
-    width: 470px;
+    width: 472px;
     height: 545px;
-    flex-shrink: 0;
+    margin: 0;
 
     position: absolute;
-    top: 75px;
     right: 20px;
   }
 
@@ -109,15 +111,30 @@
   }
 
   .app__info {
-    align-self: center;
-    padding: 0;
+    min-height: 515px;
+    margin-bottom: 120px;
+  }
+
+  .app__description {
+    display: block;
+    margin: 0;
+    width: 240px;
+
+    .font(50px, 1.2);
+    font-weight: 300;
+    text-align: center;
   }
 
   .app__img-iphone {
     width: 557px;
     height: 643px;
+    position: static;
 
     margin: 0;
-    margin-top: 135px;
+    margin-right: 20px;
+  }
+
+  .app__btn{
+    .font(21px; 18px)
   }
 }

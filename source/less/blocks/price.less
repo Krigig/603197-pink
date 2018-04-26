@@ -66,6 +66,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .price {
+    padding: 45px 0 68px;
+  }
+
   .price__see {
     overflow: visible;
     width: 100%;
@@ -76,12 +80,19 @@
   }
 
   .price__value {
-    height: 79px;
+    height: 80px;
   }
 
   .price__description {
-    height: 45px;
+    height: 47px;
     padding-left: 13px;
+    width: 152px;
+
+    text-transform: none;
+  }
+
+  .price__description-vh {
+    .visually-hidden;
   }
 
   .price__description--mobile {
@@ -90,12 +101,20 @@
 }
 
 @media (min-width: @desktop-width) {
+  .price {
+    padding: 76px 0 96px;
+    margin-bottom: 65px;
+  }
+
   .price__value {
-    height: 97px;
+    height: 100px;
   }
 
   .price__description {
     height: 60px;
+    width: 234px;
     padding-left: 20px;
+
+    font-size: 18px;
   }
 }

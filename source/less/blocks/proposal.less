@@ -80,14 +80,20 @@
 }
 
 @media (min-width: @tablet-width) {
-  .proposal__info-wrapper {
-    display: block;
-    background-color: @font-color;
-    padding-top: 50px;
+  .proposal {
+    margin-bottom: 125px;
+  }
+
+  .proposal__wrapper {
+    padding-top: 10px;
+  }
+
+  .proposal__intro-wrapper {
+    margin: 50px auto;
   }
 
   .proposal__intro {
-    margin-bottom: 10px;
+    margin: 0;
     font-size: 40px;
   }
 
@@ -109,6 +115,7 @@
   }
 
   .proposal__item {
+    margin-bottom: 35px;
     text-align: left;
   }
 
@@ -116,11 +123,20 @@
     padding-left: 310px;
   }
 
+  .proposal__info-wrapper {
+    display: block;
+    background-color: @font-color;
+    padding: 95px 0 0;
+  }
+
   .proposal__info .proposal__title {
     .font(30px; 36px);
   }
 
   .proposal__link {
+    display: block;
+    margin-top: 10px;
+
     .font(14px; 24px);
     color: @important;
   }
@@ -128,11 +144,24 @@
   .proposal__imgs li {
     height: 481px;
   }
+
+  .proposal__list {
+    width: 310px;
+    padding-top: 68px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .proposal {
+    margin-bottom: 188px;
+  }
+
   .proposal__img--vh {
     display: block;
+  }
+
+  .proposal__intro-wrapper {
+    margin: 68px auto;
   }
 
   .proposal__intro {
@@ -141,52 +170,65 @@
 
   .proposal__container {
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .proposal__imgs {
-    width: 100%;
+    width: 880px;
     padding-right: 0;
     justify-content: space-between;
     align-items: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
 
   .proposal__img {
     width: 186px;
     height: 350px;
-    padding: 0 20px;
-    margin-bottom: 50px;
+    margin: 0;
+    padding: 0 30px;
   }
 
   .proposal__list {
-    width: 100%;
+    width: 880px;
+    padding: 0;
+
     display: flex;
     justify-content: space-between;
   }
 
   .proposal__item {
-    width: 225px;
+    width: 245px;
+    margin: 0;
     text-align: center;
   }
 
   .proposal__title {
-    margin: 0;
+    margin-bottom: 25px;
     .font(30px; 30px);
+
+    &--info {
+      margin-bottom: 22px;
+    }
   }
 
   .proposal__description {
     .font(18px; 30px);
   }
 
+  .proposal__link {
+    padding-top: 20px;
+    .font(18px; 30px);
+  }
+
   .proposal__info-wrapper {
     background-color: transparent;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 155px;
+    padding-bottom: 110px;
   }
 
   .proposal__info {
-    padding-left: 360px;
+    padding-left: 368px;
   }
 
   .proposal__imgs li {
