@@ -1,14 +1,17 @@
 
-.reivew__wrapper {
-  margin-bottom: 100px;
+.reivew {
+  margin-bottom: 110px;
 }
 
 .reivew__author {
+  margin: 0;
+  margin-bottom: 15px;
   .font(18px; 30px);
   font-weight: bold;
 }
 
 .reivew__description {
+  margin: 0;
   .font(14px; 30px);
   color: @nav-color;
 }
@@ -49,3 +52,19 @@
     order: 1;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .reivew__list {
+    width: 690px;
+    margin: auto;
+  }
+
+  .reivew__author {
+    margin-bottom: 2px;
+    .font(24px; 30px);
+  }
+
+ .reivew__author-person {
+    .font(18px; 30px);
+    }
+  }
