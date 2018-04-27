@@ -5,6 +5,10 @@
   background-size: 100% 462px;
 
   background-color: @app-background;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
 }
 
 .app__container {
@@ -59,6 +63,13 @@
 @media (min-width: @tablet-width) {
   .app {
     background-size: cover;
+    background-position: center;
+
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .app__container {
@@ -92,12 +103,11 @@
   }
 
   .app__img-iphone {
-    width: 472px;
-    height: 545px;
     margin: 0;
 
     position: absolute;
-    right: 20px;
+    right: -40px;
+    top: 185px;
   }
 
   .app__intro {
@@ -106,6 +116,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .app {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
   .app__container {
     height: 853px;
   }
@@ -126,12 +145,10 @@
   }
 
   .app__img-iphone {
-    width: 557px;
-    height: 643px;
-    position: static;
+    top: 208px;
+    right: -125px;
 
     margin: 0;
-    margin-right: 20px;
   }
 
   .app__btn{

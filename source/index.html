@@ -11,7 +11,13 @@
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo"><span class="visually-hidden">Pink</span><img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22"></a>
+            <a class="page-header__logo"><span class="visually-hidden">Pink</span>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22">
+              </picture>
+            </a>
           </div>
           <nav class="site-list">
             <button class="site-list__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -39,7 +45,11 @@
       <section class="app">
         <div class="app__container container">
           <h2 class="visually-hidden">Скачать приложение</h2>
-          <img class="app__img-iphone" src="img/iphone-hand-mobile@1x.png" alt="Приложение в действии" width="258" height="286">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img class="app__img-iphone" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Приложение в действии">
+          </picture>
           <div class="app__info">
             <p class="app__description">Взгляните на жизнь иначе!</p>
             <a class="app__btn" href="#">Скачать приложение</a>
@@ -82,13 +92,25 @@
             </ul>
             <ul class="proposal__imgs">
               <li>
-                <img class="proposal__img proposal__img--vh" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!" width="157" height="320">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/iphone-screen-tablet@1x.png 1x, iphone-screen-tablet@2x.png 2x">
+                  <img class="proposal__img proposal__img--vh" alt="Всем привет!">
+                </picture>
               </li>
               <li>
-                <img class="proposal__img proposal__img--vh" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!" width="157" height="320">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, iphone-screen-2-tablet@2x.png 2x">
+                  <img class="proposal__img proposal__img--vh" alt="Всем привет!">
+                </picture>
               </li>
               <li>
-                <img class="proposal__img" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!" width="157" height="320">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                  <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, iphone-screen-3-tablet@2x.png 2x">
+                  <img class="proposal__img" src="img/iphone-screen-mobile@1x.png" alt="Всем привет!">
+                </picture>
               </li>
             </ul>
           </div>

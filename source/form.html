@@ -12,7 +12,13 @@
       <div class="page-header__container">
         <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo" href="index.html"><span class="visually-hidden">Pink</span><img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22"></a>
+            <a class="page-header__logo"><span class="visually-hidden">Pink</span>
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22">
+              </picture>
+            </a>
           </div>
           <nav class="site-list">
             <button class="site-list__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>

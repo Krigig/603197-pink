@@ -68,14 +68,15 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__logo {
-    padding-top: 40px;
+  .page-header__logo-wrapper {
     height: 110px;
   }
 
-  .page-header__logo-wrapper {
-    height: 110px;
-    padding-top: 43px;
+  .page-header__logo img {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin-top: 7px;
   }
 }
 
@@ -99,12 +100,13 @@
   }
 
   .page-header__logo-wrapper {
-    height: 25px;
     border: none;
     padding: 0;
   }
-  .page-header__logo {
+
+  .page-header__logo img {
     padding: 0;
-    .size(150px; 25px);
+    .size(150px; auto);
+    margin-top: 27px;
   }
 }
