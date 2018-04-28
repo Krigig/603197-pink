@@ -84,7 +84,7 @@
 
 @media (min-width: @tablet-width) {
   .proposal {
-    margin-bottom: 125px;
+    margin: 0;
   }
 
   .proposal__intro-wrapper {
@@ -114,16 +114,65 @@
 
   .proposal__info {
     padding-left: 310px;
+    padding-top: 95px;
+    padding-bottom: 125px;
+
+    position: relative;
+
+    &::after {
+
+      content: "";
+
+      position: absolute;
+      top: 60px;
+      left: 0;
+
+      width: 239px;
+      height: 276px;
+
+      background-image: url("../img/icon-timer-t.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+
+      content: "";
+
+      position: absolute;
+      top: 115px;
+      left: 20px;
+
+      width: 202px;
+      height: 202px;
+
+      background-image: url("../img/icon-editor-diagram-fill-t.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+
+      z-index: 2;
+    }
+  }
+
+  .proposal__time {
+    position: absolute;
+    top: 40px;
+    left: 65px;
+
+    color: @important;
+
+    .font(96px; 150px);
+    font-weight: bold;
   }
 
   .proposal__info-wrapper {
     display: block;
     background-color: @font-color;
-    padding: 95px 0 0;
-  }
+    }
 
-  .proposal__info .proposal__title {
+  .proposal__title--info {
     .font(30px; 36px);
+    width: 170px;
   }
 
   .proposal__link {
@@ -198,6 +247,7 @@
     .font(30px; 30px);
 
     &--info {
+      width: 330px;
       margin-bottom: 22px;
     }
   }
@@ -207,18 +257,58 @@
   }
 
   .proposal__link {
-    padding-top: 20px;
+    padding-top: 22px;
     .font(18px; 30px);
   }
 
   .proposal__info-wrapper {
     background-color: transparent;
-    padding-top: 155px;
-    padding-bottom: 110px;
   }
 
   .proposal__info {
+    padding-top: 159px;
+    padding-bottom: 110px;
     padding-left: 368px;
+
+
+    &::after {
+
+      content: "";
+
+      position: absolute;
+      top: 65px;
+      left: 0;
+
+      width: 298px;
+      height: 345px;
+
+      background-image: url("../img/icon-timer.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+
+      content: "";
+
+      position: absolute;
+      top: 135px;
+      left: 25px;
+
+      width: 253px;
+      height: 253px;
+
+      background-image: url("../img/icon-editor-diagram-fill.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+
+      z-index: 2;
+    }
+  }
+
+  .proposal__time {
+    left: 80px;
+    .font(120px; 187px);
   }
 
   .proposal__imgs li {
