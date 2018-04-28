@@ -41,14 +41,20 @@
     <main class="page-main">
       <section class="contest">
         <div class="contest__wrapper">
-          <h1 class="contest__intro">Фотографии пользователей</h1>
+          <h1 class="contest__intro">Фотографии<br>пользователей</h1>
         </div>
-        <p class="contest__description">Взгляните на фотографии, которые выкладывают пользователи! Видите как нехватает ваших?</p>
+        <p class="contest__description">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите как не хватает ваших?</p>
       </section>
       <section class="photo">
         <h2 class="visually-hidden">Фотогалерея</h2>
         <div class="photo__panorama">
-          <a class="photo__link" href="#"><img class="photo__img-panorama" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя" width="320" height="137"></a>
+          <a class="photo__link" href="#">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="photo__img-panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото пользователя">
+            </picture>
+          </a>
           <div class="container">
             <div class="photo__wrapper">
               <blockquote class="photo__post photo__post--panorama">
@@ -61,7 +67,13 @@
         </div>
         <ul class="photo__items container">
           <li class="photo__item">
-              <a class="photo__link" href="#"><img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="Фото пользователя" srcset="img/photo-car-mobile@2x.jpg 2x">
+                </picture>
+              </a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Левон <span class="photo__time">(5 часов назад)</span></cite>
               <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -69,7 +81,13 @@
             <p class="photo__likes">Нравится: 356</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Антон <span class="photo__time">(12 часов назад)</span></cite>
               <p class="photo__text">Соседи будут рады!</p>
@@ -77,7 +95,13 @@
             <p class="photo__likes">Нравится: 666</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img class="photo__img" src="img/photo-window-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Борис <span class="photo__time">(20 часов назад)</span></cite>
               <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -85,7 +109,13 @@
             <p class="photo__likes">Нравится: 215</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img class="photo__img" src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Сергей <span class="photo__time">(25 часов назад)</span></cite>
               <p class="photo__text">Самай кубанская в мире!</p>
@@ -93,7 +123,13 @@
             <p class="photo__likes">Нравится: 4</p>
           </li>
           <li class="photo__item">
-            <a class="photo__link" href="#"><img class="photo__img" src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
+            <a class="photo__link" href="#">
+              <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Максим<span class="photo__time">(40 часов назад)</span></cite>
               <p class="photo__text">Где снег-то?</p>
@@ -101,7 +137,13 @@
             <p class="photo__likes">Нравится: 150</p>
           </li>
           <li class="photo__item">
-              <a class="photo__link" href="#"><img class="photo__img" src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователя" width="280" height="180"></a>
+              <a class="photo__link" href="#">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                  <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото пользователя">
+                </picture>
+              </a>
             <blockquote class="photo__post">
               <cite class="photo__author-name">Надежда <span class="photo__time">(45 часов назад)</span></cite>
               <p class="photo__text">Всем GM и взаимные лайки!</p>

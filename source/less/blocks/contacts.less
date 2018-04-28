@@ -47,7 +47,13 @@
   font-weight: 300;
 }
 
-.contacts img {
+.contacts__map {
+  overflow: hidden;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.contacts__map img {
   width: 100%;
 }
 
@@ -81,6 +87,10 @@
   .contacts__intro-wrapper {
     margin: 0;
   }
+
+  .contacts__map {
+    height: 373px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -104,5 +114,9 @@
 
   .contacts__intro {
     font-size: 50px;
+  }
+
+  .contacts__map {
+    height: 503px;
   }
 }
