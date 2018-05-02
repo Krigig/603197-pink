@@ -15,15 +15,31 @@
   .ul;
 }
 
+.page-footer--vh {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
-    padding: 0;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+
+    padding-top: 20px;
+    padding-bottom: 160px;
 
     &--index {
       display: flex;
     }
+
+    &--vh {
+      display: flex;
+    }
   }
 }
+
+@media (min-width: @desktop-width) {
+    .page-footer {
+      padding-top: 60px;
+    }
+ }
