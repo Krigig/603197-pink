@@ -127,30 +127,39 @@
         </div>
       </section>
       <section class="reivew">
-        <div class="reivew__wrapper slider container">
+        <div class="reivew__wrapper container">
           <h2 class="visually-hidden">Отзывы</h2>
-          <ul class="reivew__list slider__list">
-            <li class="reivew__item slider__item">
+          <div class="reivew__btn">
+            <a class="reivew__left-btn" href="#"><span class="visually-hidden">Предыдущий слайд</span></a>
+            <a class="reivew__right-btn" href="#"><span class="visually-hidden">Следующий слайд</span></a>
+          </div>
+          <div class="reivew__see">
+            <input type="radio" id="re-btn-1" name="toggle-1" checked>
+            <input type="radio" id="re-btn-2" name="toggle-1">
+            <input type="radio" id="re-btn-3" name="toggle-1">
+            <div class="reivew__controls">
+              <label for="re-btn-1"></label>
+              <label for="re-btn-2"></label>
+              <label for="re-btn-3"></label>
+            </div>
+          <ul class="reivew__list">
+            <li class="reivew__item">
               <h3 class="reivew__author">Николай Петров</h3>
               <p class="reivew__author-person">25 лет, водитель трамвая</p>
               <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="reivew__item slider__item visually-hidden">
+            <li class="reivew__item">
               <h3 class="reivew__author">Николай Петров</h3>
               <p class="reivew__author-person">25 лет, водитель трамвая</p>
               <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="reivew__item slider__item visually-hidden">
+            <li class="reivew__item">
               <h3 class="reivew__author">Николай Петров</h3>
               <p class="reivew__author-person">25 лет, водитель трамвая</p>
               <p class="reivew__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
-          <p class="reivew__toggles slider__toggles visually-hidden">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+        </div>
         </div>
       </section>
       <section class="price">

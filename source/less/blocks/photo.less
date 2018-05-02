@@ -116,11 +116,12 @@
 
   .photo__item {
     width: 300px;
+    min-height: 455px;
     margin-bottom: 20px;
 
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: stretch;
 
   }
 
@@ -190,6 +191,10 @@
     &--panorama {
       height: 506px;
     }
+  }
+
+  .photo__item {
+    min-height: 555px;
   }
 }
 
