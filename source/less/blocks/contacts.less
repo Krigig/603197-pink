@@ -57,6 +57,23 @@
   overflow: hidden;
   height: 200px;
   margin-bottom: 10px;
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+    background-size: cover;
+
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .contacts__map img {
@@ -102,6 +119,10 @@
 
   .contacts__map {
     height: 373px;
+
+     &::after {
+      height: 80px;
+    }
   }
 }
 
@@ -133,6 +154,10 @@
 
   .contacts__map {
     height: 499px;
+
+    &::after {
+      height: 100px;
+    }
   }
 
   .contacts__map iframe {

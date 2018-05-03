@@ -4,6 +4,7 @@
   border: none;
 
   &--bg-color {
+    margin-top: 25px;
     text-align: center;
     background-color: @main-bg-color;
   }
@@ -13,13 +14,21 @@
   .ul;
 }
 
+.form__item {
+  margin-bottom: 17px;
+}
+
 .form__caption {
   padding: 0;
-  padding-top: 50px;
+  padding-top: 40px;
+  margin: 0 auto;
+  width: 100%;
+
 
   .font(14px; 18px);
   color: @important;
   text-transform: uppercase;
+  background-color: inherit;
 
   &--vh {
     display: none;
@@ -27,6 +36,10 @@
 }
 
 .form__title {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 5px;
+
   .font(14px; 30px);
   color: @important;
 

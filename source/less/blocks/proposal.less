@@ -4,6 +4,7 @@
 
 .proposal__wrapper {
   background-color: @main-bg-color;
+  padding-top: 27px;
 
   position: relative;
 
@@ -11,15 +12,15 @@
     content: "";
 
     position: absolute;
-    top: -5px;
-    left: -8px;
+    top: 0;
+    left: 0;
 
     width: 100%;
-    height: 34px;
+    height: 50px;
+    background-size: cover;
 
-    background-image: url("../img/bg-triangle-white-m.svg");
+    background-image: url("../img/bg-triangle-white.svg");
     background-repeat: no-repeat;
-
   }
 }
 
@@ -38,6 +39,10 @@
   font-weight: 300;
 
   text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .proposal__list {
@@ -84,6 +89,8 @@
 
 .proposal__img {
   margin: 0 auto;
+  position: relative;
+  z-index: 10;
 }
 
 .proposal__img--vh,
@@ -94,7 +101,7 @@
 @media (max-width: @tablet-width) {
   .proposal__intro-wrapper {
     width: 205px;
-    margin: 40px auto;
+    margin: 40px auto 10px;
   }
 }
 
@@ -103,8 +110,15 @@
     margin: 0;
   }
 
+  .proposal__wrapper {
+     padding-top: 18px;
+     &::after {
+      height: 70px;
+    }
+  }
+
   .proposal__intro-wrapper {
-    margin: 50px auto;
+    margin: 50px auto 34px;
   }
 
   .proposal__intro {
@@ -145,8 +159,9 @@
 
       width: 239px;
       height: 276px;
+      background-size: contain;
 
-      background-image: url("../img/icon-timer-t.svg");
+      background-image: url("../img/icon-timer.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
     }
@@ -157,12 +172,13 @@
 
       position: absolute;
       top: 115px;
-      left: 20px;
+      left: 18px;
 
       width: 202px;
       height: 202px;
+      background-size: contain;
 
-      background-image: url("../img/icon-editor-diagram-fill-t.svg");
+      background-image: url("../img/icon-editor-diagram-fill.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
 
@@ -216,6 +232,10 @@
 
   .proposal__wrapper {
     padding-top: 10px;
+
+     &::after {
+      height: 100px;
+    }
   }
 
   .proposal__img--vh {
@@ -297,6 +317,7 @@
 
       width: 298px;
       height: 345px;
+      background-size: contain;
 
       background-image: url("../img/icon-timer.svg");
       background-position: 0 0;
@@ -313,6 +334,7 @@
 
       width: 253px;
       height: 253px;
+      background-size: contain;
 
       background-image: url("../img/icon-editor-diagram-fill.svg");
       background-position: 0 0;
