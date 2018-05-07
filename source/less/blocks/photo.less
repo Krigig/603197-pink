@@ -92,10 +92,15 @@
     left: 0;
 }
 
+.photo__panorama {
+  position: relative;
+}
+
 .photo__link {
   height: 180px;
   display: block;
   position: relative;
+
   max-width: 660px;
   margin-left: auto;
   margin-right: auto;
@@ -104,6 +109,26 @@
   &--panorama {
     height: 137px;
   }
+}
+
+.photo__panorama-day {
+    width: 140px;
+    height: 36px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 5px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    background-color: @important;
+    color: @font-color;
+    text-transform: uppercase;
+    .font(12px; 24px);
+    font-weight: bold;
+
+    z-index: 10;
 }
 
 @media (min-width: @tablet-width) {
@@ -176,12 +201,17 @@
    }
 
   .photo__link {
-  height: 300px;
-  max-width: 940px;
+    height: 300px;
+    max-width: 940px;
 
     &--panorama {
       height: 509px;
     }
+  }
+
+  .photo__panorama-day {
+    left: 72%;
+    top: 57px;
   }
 }
 
