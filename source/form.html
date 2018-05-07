@@ -49,7 +49,7 @@
       </section>
       <section class="form">
         <form class="form__field" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__block form__block--border  container">
+          <fieldset class="form__block form__block--border">
             <legend class="visually-hidden">Персональные данные</legend>
             <ul class="form__items">
               <li class="form__item">
@@ -66,16 +66,16 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__block form__block--bg-color form__block--grow">
+          <fieldset class="form__block form__block--bg-color form__block--grow form__block--checkbox">
             <legend class="form__caption">Ваши безбашенные достижения&nbsp;в&nbsp;путешествии</legend>
-            <ul class="form__items container">
+            <ul class="form__items form__items--checkbox">
               <li class="form__item">
                 <label class="form__value">
                   <input class="visually-hidden" type="checkbox" name="Selfi" checked>
                   <span class="form__checkbox-indicator"></span>Сделал селфи с акулой
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--last">
                 <label class="form__value">
                   <input class="visually-hidden" type="checkbox" name="Scorched" checked>
                   <span class="form__checkbox-indicator"></span>Обгорел на пляже
@@ -87,7 +87,7 @@
                   <span class="form__checkbox-indicator"></span>Видел Чака Норриса
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--last">
                 <label class="form__value">
                   <input class="visually-hidden" type="checkbox" name="Souvenirs">
                   <span class="form__checkbox-indicator"></span>Накупил сувениров
@@ -99,7 +99,7 @@
                   <span class="form__checkbox-indicator"></span>Удержал башню
                 </label>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--last">
                 <label class="form__value">
                   <input class="visually-hidden" type="checkbox" name="Defeated the hotel">
                   <span class="form__checkbox-indicator"></span>Разгромил отель
@@ -107,7 +107,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__block form__block--contacts form__block--grow  container">
+          <fieldset class="form__block form__block--contacts form__block--grow">
             <legend class="form__caption form__caption--vh">Контактная информация</legend>
             <ul class="form__items form__items--contacts">
               <li class="form__item form__item--contacts">
@@ -122,7 +122,7 @@
           </fieldset>
           <fieldset class="form__block form__block--bg-color form__block--app">
             <legend class="form__caption">С каким приложением путешествовали?</legend>
-            <ul class="form__items container">
+            <ul class="form__items">
               <li class="form__item">
                 <label class="form__value">
                 <input class="visually-hidden" type="radio" name="type-app" value="iOS" checked>
@@ -140,13 +140,13 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__block form__block--emotion form__block--grow  container">
+          <fieldset class="form__block form__block--emotion form__block--grow">
             <legend class="form__caption">Опишите свои эмоции</legend>
             <textarea class="form__text-emotion" name="emotion" id="text" rows="4" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="form__end  container">
             <input class="form__send" type="submit" value="Отправить форму" name="send" aria-label="Отправить форму">
-            <p class="form__ps"><sub>*</sub> — Обязательные поля</p>
+            <p class="form__ps"><sub>*</sub> — Обязательные <span class="form__ps-vh">для заполнения</span> поля</p>
           </div>
         </form>
       </section>
