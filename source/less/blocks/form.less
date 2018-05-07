@@ -261,13 +261,19 @@
     border: 2px solid @border-color;
     background-color: transparent;
 
+    &--bg-color {
+      width: 612px;
+    }
+
     &--border {
       order: -3;
       border: none;
+      margin-bottom: 0;
     }
 
     &--app {
       order: -2;
+      margin-top: 0;
       margin-bottom: 55px;
     }
 
@@ -277,14 +283,14 @@
     }
 
     &--checkbox {
-      margin-top: 40px;
+      margin-top: 28px;
     }
 
     &--emotion {
       width: 620px;
       box-sizing: border-box;
       margin: 0 auto;
-      margin-top: 56px;
+      margin-top: 30px;
       margin-bottom: 68px;
     }
   }
@@ -314,7 +320,7 @@
 
   .form__items {
     &--contacts {
-      padding-top: 39px;
+      padding-top: 36px;
     }
 
     &--checkbox {
@@ -335,17 +341,23 @@
     }
 
     &--contacts {
+      padding-left: 55px;
+      margin-bottom: 30px;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      align-content: center;
+    }
+    &--contacts:last-child {
+      margin-bottom: 26px;
     }
   }
 
   .form__block--app .form__item {
-  margin-bottom: 45px;
+    margin-bottom: 45px;
 
-   &:last-child {
-    margin-bottom: 59px;
+    &:last-child {
+      margin-bottom: 59px;
   }
 }
 
@@ -363,18 +375,57 @@
     flex-grow: 1;
   }
 
+  .form__item {
+    position: relative;
+
+    &--phone::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 59px;
+
+      width: 62px;
+      height: 62px;
+
+      background-image: url("../img/icon-phone.svg");
+      background-color: @border-color;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &--mail::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 59px;
+
+      width: 62px;
+      height: 62px;
+
+      background-image: url("../img/icon-mail.svg");
+      background-color: @border-color;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+  }
+
   .form__item--contacts .form__title {
+    display: block;
     order: 2;
+    padding-top: 10px;
+    padding-left: 20px;
+
+    text-align: left;
   }
 
   .form__item--contacts .form__input {
     width: 500px;
     flex-grow: 0;
     margin-left: 0;
-  }
 
-  .form__item--contacts .form__title {
-    display: block;
+    position: relative;
   }
 
   .form__end {
@@ -465,6 +516,13 @@
   .form__item {
     &--contacts {
       flex-direction: column;
+    }
+
+     &--phone::after {
+      right: 0;
+    }
+    &--mail::after {
+      right: 0;
     }
   }
 
