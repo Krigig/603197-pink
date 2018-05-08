@@ -1,4 +1,29 @@
+.page-footer__copyright {
+    width: 130px;
+    margin-top: 5px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 .copyright__text {
   .font(14px; 18px);
   color: @nav-color;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__copyright {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__copyright {
+    width: 155px;
+  }
+  .copyright__text {
+    .font(18px; 18px);
+  }
 }

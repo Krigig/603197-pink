@@ -1,10 +1,14 @@
 .app {
+  background-color: @app-background;
+  overflow: hidden;
+}
+
+.app__wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  height: 462px;
 
-  background-size: 100% 462px;
-
-  background-color: @app-background;
+  background-size: cover;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -12,7 +16,7 @@
 }
 
 .app__container {
-  min-height: 648px;
+  min-height: 186px;
 }
 
 .app__description {
@@ -55,7 +59,7 @@
 }
 
 .app__img-iphone {
-  margin-top: 176px;
+  margin-top: -285px;
   margin-bottom: 26px;
   margin-left: -20px;
 }
@@ -70,6 +74,10 @@
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/bg-back-tablet@2x.jpg");
     }
+  }
+
+  .app__wrapper {
+    .visually-hidden;
   }
 
   .app__container {
