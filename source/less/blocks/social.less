@@ -1,0 +1,39 @@
+.social__list {
+  .ul;
+  width: 100%;
+  margin-top: 15px;
+  margin-right: 22px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__item {
+  padding: 12px;
+
+  width: 51px;
+  height: 51px;
+  box-sizing: border-box;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+  &--youtube {
+    padding-left: 17px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    width: 176px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    margin-right: 0px;
+    margin-left: 9px;
+  }
+}

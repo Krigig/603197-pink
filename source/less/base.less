@@ -36,3 +36,42 @@ body {
   font-family: @font;
   .font(14px; 1.2);
 }
+
+.yes {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+}
+
+.no {
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .no,
+  .yes {
+    background-position: 50% 50%;
+  }
+}
+
+
+/*.price__description::after {
+  content: "";
+
+  position: absolute;
+
+  width: 33px;
+  height: 23px;
+
+  top: 22px;
+  left: 50%;
+
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  z-index: 10;
+}
+*/
