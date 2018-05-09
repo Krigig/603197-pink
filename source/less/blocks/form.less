@@ -10,6 +10,7 @@
 
   &--bg-color {
     width: 100%;
+
     padding: 0;
     margin-top: 25px;
     margin-bottom: 30px;
@@ -134,6 +135,7 @@
   height: 35px;
   background-size: 70%;
 
+
   background-image: url("../img/icon-yes-pink.svg");
   background-repeat: no-repeat;
   background-position: 6px 8px;
@@ -184,6 +186,7 @@
 
 .form__text-emotion {
   display: block;
+
   padding-top: 11px;
   padding-left: 17px;
   .size(271px; 192px);
@@ -206,6 +209,8 @@
 }
 
 .form__text-emotion::-webkit-input-placeholder {
+  padding-top: 11px;
+  padding-left: 17px;
   color: @nav-color;
 }
 
@@ -302,6 +307,14 @@
       margin-top: 30px;
       margin-bottom: 68px;
     }
+  }
+
+  .form__block--emotion .form__caption {
+    padding: 0 32px;
+  }
+
+  .form__block--app .form__caption {
+    padding: 0 32px;
   }
 
   .form__block--emotion .form__caption {
@@ -413,6 +426,7 @@
       width: 62px;
       height: 63px;
 
+
       background-image: url("../img/icon-mail.svg");
       background-color: @border-color;
       background-repeat: no-repeat;
@@ -425,6 +439,7 @@
     order: 2;
     padding-top: 10px;
     padding-left: 20px;
+
     padding-right: 30px;
 
     text-align: left;
@@ -479,6 +494,7 @@
     &--grow {
       flex-grow: 1;
       margin-bottom: 57px;
+
     }
 
     &--app {
@@ -492,6 +508,23 @@
     &--emotion {
       margin-bottom: 65px;
     }
+
+    &--app {
+      width: 428px;
+    }
+
+    &--border {
+     margin-top: 14px;
+    }
+
+    &--emotion {
+      margin-bottom: 65px;
+    }
+  }
+
+  .form__block--app .form__items {
+    padding-left: 72px;
+    padding-top: 50px;
   }
 
   .form__block--app .form__items {
@@ -531,10 +564,12 @@
     }
 
      &--phone::after {
+
       right: 18px;
     }
     &--mail::after {
       right: -5px;
+
     }
   }
 
