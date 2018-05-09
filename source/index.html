@@ -201,21 +201,39 @@
               </tr>
               <tr>
                 <td class="price__description price__description--vh-m">Розовый фильтр</td>
-                <td class="price__description yes"><span class="price__description-vh">Розовый фильтр</span></td>
-                <td class="price__description yes"><span class="price__description-vh">Розовый фильтр</span></td>
-                <td class="price__description yes"><span class="price__description-vh">Розовый фильтр</span></td>
+                <td class="price__description"><span class="price__description-vh">Розовый фильтр</span>
+                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
+                </td>
+                <td class="price__description"><span class="price__description-vh">Розовый фильтр</span>
+                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
+                </td>
+                <td class="price__description"><span class="price__description-vh">Розовый фильтр</span>
+                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
+                </td>
               </tr>
               <tr>
                 <td class="price__description price__description--vh-m">Смайлики</td>
-                <td class="price__description no"><span class="price__description-vh">Смайлики</span></td>
-                <td class="price__description yes"><span class="price__description-vh">Смайлики</span></td>
-                <td class="price__description yes"><span class="price__description-vh">Смайлики</span></td>
+                <td class="price__description"><span class="price__description-vh">Смайлики</span>
+                  <svg class="price__no" width="29px" height="27px"><use xlink:href="#icon-no-sprite"></use></svg>
+                </td>
+                <td class="price__description"><span class="price__description-vh">Смайлики</span>
+                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
+                </td>
+                <td class="price__description"><span class="price__description-vh">Смайлики</span>
+                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
+                </td>
               </tr>
               <tr>
                 <td class="price__description price__description--vh-m">Комментарии</td>
-                <td class="price__description no"><span class="price__description-vh">Комментарии</span></td>
-                <td class="price__description no"><span class="price__description-vh">Комментарии</span></td>
-                <td class="price__description yes"><span class="price__description-vh">Комментарии</span></td>
+                <td class="price__description"><span class="price__description-vh">Комментарии</span>
+                  <svg class="price__no" width="29px" height="27px"><use xlink:href="#icon-no-sprite"></use></svg>
+                </td>
+                <td class="price__description"><span class="price__description-vh">Комментарии</span>
+                  <svg class="price__no" width="29px" height="27px"><use xlink:href="#icon-no-sprite"></use></svg>
+                </td>
+                <td class="price__description"><span class="price__description-vh">Комментарии</span>
+                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
+                </td>
               </tr>
             </table>
           </div>
@@ -246,7 +264,6 @@
         <div class="contacts__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="960" height="499" allowfullscreen></iframe>
           <picture>
-
             <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
@@ -262,21 +279,26 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span><img src="img/icon-twitter.svg" alt="Twitter" width="19px" height="19px"></a>
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span>
+              <svg width="19px" height="19px"><use xlink:href="#icon-twitter-sprite"></use></svg>
+            </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span><img src="img/icon-facebook.svg" alt="Twitter" width="19px" height="19px"></a>
+          <li class="social__item social__item--facebook">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span>
+              <svg width="9px" height="19px"><use xlink:href="#icon-facebook-sprite"></use></svg>
+            </a>
           </li>
           <li class="social__item social__item--youtube">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Мы на Youtube</span><img src="img/icon-youtube.svg" alt="Youtube" width="15px" height="15px"></a>
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy"><span class="visually-hidden">Мы на Youtube</span>
+              <svg width="15px" height="15px"><use xlink:href="#icon-youtube-sprite"></use></svg>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span>
-
-        <svg class="copyright__logo" width="40px" height="48px"><use xlink:href="#htmlacademy"></use></svg>
+        <svg class="copyright__logo" width="40px" height="48px"><use xlink:href="#htmlacademy-sprite"></use></svg>
         </a>
       </div>
     </footer>

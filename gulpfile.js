@@ -48,7 +48,7 @@ gulp.task("webp", function() {
 });
 
 gulp.task("sprite", function() {
-  return gulp.src("source/img/*.svg")
+  return gulp.src("source/img/*-sprite.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
@@ -101,6 +101,7 @@ gulp.task("build", function(done) {
     "images",
     "webp",
     "sprite",
+    "html",
     done
   );
 });
