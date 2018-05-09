@@ -10,6 +10,7 @@
 
   &--bg-color {
     width: 100%;
+    padding: 0;
     margin-top: 25px;
     margin-bottom: 30px;
     background-color: @main-bg-color;
@@ -133,7 +134,7 @@
   height: 35px;
   background-size: 70%;
 
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("../img/icon-yes-pink.svg");
   background-repeat: no-repeat;
   background-position: 6px 8px;
   fill: @important;
@@ -183,7 +184,9 @@
 
 .form__text-emotion {
   display: block;
-  .min-size(271px; 192px);
+  padding-top: 11px;
+  padding-left: 17px;
+  .size(271px; 192px);
   resize: none;
   margin-bottom: 49px;
 
@@ -203,8 +206,6 @@
 }
 
 .form__text-emotion::-webkit-input-placeholder {
-  padding-top: 11px;
-  padding-left: 17px;
   color: @nav-color;
 }
 
@@ -394,7 +395,7 @@
       right: 59px;
 
       width: 62px;
-      height: 62px;
+      height: 63px;
 
       background-image: url("../img/icon-phone.svg");
       background-color: @border-color;
@@ -410,7 +411,7 @@
       right: 59px;
 
       width: 62px;
-      height: 62px;
+      height: 63px;
 
       background-image: url("../img/icon-mail.svg");
       background-color: @border-color;
@@ -424,14 +425,15 @@
     order: 2;
     padding-top: 10px;
     padding-left: 20px;
+    padding-right: 30px;
 
     text-align: left;
   }
 
   .form__item--contacts .form__input {
-    width: 500px;
-    flex-grow: 0;
+    width: 436px;
     margin-left: 0;
+    flex-grow: 0;
 
     position: relative;
   }
@@ -519,7 +521,8 @@
   }
 
   .form__item--contacts .form__input {
-    width: 375px;
+    width: 315px;
+    box-sizing: border-box;
   }
 
   .form__item {
@@ -528,10 +531,10 @@
     }
 
      &--phone::after {
-      right: 15px;
+      right: 18px;
     }
     &--mail::after {
-      right: 0;
+      right: -5px;
     }
   }
 
@@ -558,7 +561,7 @@
 
   .form__text-emotion {
     width: 820px;
-    min-height: 125px;
+    height: 125px;
     box-sizing: border-box;
     margin: 35px 56px;
     margin-bottom: 42px;

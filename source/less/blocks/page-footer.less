@@ -14,6 +14,16 @@
   }
 }
 
+.page-footer__copyright {
+    width: 130px;
+    margin-top: 5px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
 .social__list {
   .ul;
 }
@@ -40,10 +50,18 @@
       display: flex;
     }
   }
+
+  .page-footer__copyright {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: @desktop-width) {
     .page-footer {
       padding-top: 60px;
     }
+
+    .page-footer__copyright {
+    width: 155px;
+  }
  }
