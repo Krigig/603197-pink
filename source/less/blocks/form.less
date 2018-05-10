@@ -37,7 +37,7 @@
 .form__block--app .form__item {
   margin-bottom: 45px;
 
-   &:last-child {
+  &:last-child {
     margin-bottom: 45px;
   }
 }
@@ -317,14 +317,6 @@
     padding: 0 32px;
   }
 
-  .form__block--emotion .form__caption {
-    padding: 0 32px;
-  }
-
-  .form__block--app .form__caption {
-    padding: 0 32px;
-  }
-
   .form__caption {
     width: auto;
     padding: 0 32px;
@@ -358,46 +350,6 @@
     flex-direction: row;
     align-items: center;
 
-    &:last-child {
-      margin-bottom: 59px;
-    }
-
-    &--contacts {
-      padding-left: 55px;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      align-content: center;
-    }
-    &--contacts:last-child {
-      margin-bottom: 26px;
-    }
-  }
-
-  .form__block--app .form__item {
-    margin-bottom: 45px;
-
-    &:last-child {
-      margin-bottom: 59px;
-  }
-}
-
-  .form__block--app .form__items {
-    padding-top: 49px;
-    padding-left: 55px;
-  }
-
-  .form__value {
-    padding-left: 60px;
-  }
-
-  .form__input {
-    margin-left: 20px;
-    flex-grow: 1;
-  }
-
-  .form__item {
     position: relative;
 
     &--phone::after {
@@ -432,6 +384,45 @@
       background-repeat: no-repeat;
       background-position: 50% 50%;
     }
+
+    &:last-child {
+      margin-bottom: 59px;
+    }
+
+    &--contacts {
+      padding-left: 55px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+    }
+
+    &--contacts:last-child {
+      margin-bottom: 26px;
+    }
+  }
+
+  .form__block--app .form__item {
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 59px;
+    }
+  }
+
+  .form__block--app .form__items {
+    padding-top: 49px;
+    padding-left: 55px;
+  }
+
+  .form__value {
+    padding-left: 60px;
+  }
+
+  .form__input {
+    margin-left: 20px;
+    flex-grow: 1;
   }
 
   .form__item--contacts .form__title {
@@ -494,7 +485,6 @@
     &--grow {
       flex-grow: 1;
       margin-bottom: 57px;
-
     }
 
     &--app {
@@ -502,29 +492,12 @@
     }
 
     &--border {
-     margin-top: 14px;
+      margin-top: 14px;
     }
 
     &--emotion {
       margin-bottom: 65px;
     }
-
-    &--app {
-      width: 428px;
-    }
-
-    &--border {
-     margin-top: 14px;
-    }
-
-    &--emotion {
-      margin-bottom: 65px;
-    }
-  }
-
-  .form__block--app .form__items {
-    padding-left: 72px;
-    padding-top: 50px;
   }
 
   .form__block--app .form__items {
@@ -559,17 +532,12 @@
   }
 
   .form__item {
-    &--contacts {
-
-    }
-
-     &--phone::after {
-
+    &--phone::after {
       right: 18px;
     }
+
     &--mail::after {
       right: -5px;
-
     }
   }
 

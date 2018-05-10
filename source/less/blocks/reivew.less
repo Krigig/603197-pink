@@ -18,13 +18,17 @@
 
 .reivew__list {
   .ul;
+  width: 840px;
+  transition: 0.8s ease;
 }
 
 .reivew__item {
   display: flex;
   flex-direction: column;
-
   text-align: center;
+
+  float: left;
+  width: 280px;
 }
 
 .reivew__author-person {
@@ -35,7 +39,7 @@
   position: relative;
 }
 
-.reivew__wrapper input[type=radio] {
+.reivew__wrapper input[type="radio"] {
   display: none;
 }
 
@@ -68,18 +72,7 @@
   background-color: #b5b9be;
 
   cursor: pointer;
-  }
-
-.reivew__list {
-  width: 840px;
-  transition: 0.8s ease;
 }
-
-.reivew__item {
-  float: left;
-  width: 280px;
-}
-
 
 #re-btn-1:checked ~ .reivew__list {
   transform: translate(0);
@@ -115,7 +108,7 @@
 
   .reivew__item {
     width: 620px;
-}
+  }
 
   .reivew__author {
     margin: 0;
@@ -140,6 +133,7 @@
     left: 45%;
     bottom: -48px;
   }
+
   .reivew__description {
     margin: 0;
     .font(18px; 30px);
@@ -155,7 +149,7 @@
 }
 
 @media (min-width: @desktop-width) {
-   .reivew {
+  .reivew {
     margin-bottom: 30px;
   }
 
@@ -173,19 +167,15 @@
     background-repeat: no-repeat;
     background-position: 0 0;
   }
-  .reivew__list {
-    width: 690px;
-    margin: auto;
-  }
 
   .reivew__author {
     margin-bottom: 2px;
     .font(24px; 30px);
   }
 
- .reivew__author-person {
+  .reivew__author-person {
     .font(18px; 30px);
-    }
+  }
 
   .reivew__see {
     min-width: 690px;
@@ -195,43 +185,44 @@
 
   .reivew__list {
     width: 2070px;
+    margin: auto;
   }
 
   .reivew__item {
     width: 690px;
-}
+  }
 
   .reivew__controls {
     display: none;
   }
 
   .reivew__left-btn {
-  position: absolute;
-  left: 0;
-  top: 27px;
+    position: absolute;
+    left: 0;
+    top: 27px;
 
-  width: 23px;
-  height: 48px;
+    width: 23px;
+    height: 48px;
 
-  background-image: url("../img/icon-review-arrow-left.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 
-  cursor: pointer;
-}
+    cursor: pointer;
+  }
 
-.reivew__right-btn {
-  position: absolute;
-  right: 0;
-  top: 27px;
+  .reivew__right-btn {
+    position: absolute;
+    right: 0;
+    top: 27px;
 
-  width: 23px;
-  height: 48px;
+    width: 23px;
+    height: 48px;
 
-  background-image: url("../img/icon-review-arrow-right.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 
-  cursor: pointer;
-}
+    cursor: pointer;
+  }
 }

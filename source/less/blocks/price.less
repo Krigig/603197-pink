@@ -26,7 +26,7 @@
   border-collapse: collapse;
 }
 
-.price__wrapper input[type=radio] {
+.price__wrapper input[type="radio"] {
   display: none;
 }
 
@@ -66,6 +66,7 @@
 
   fill: #f25b26;
 }
+
 .price__description {
   position: relative;
   height: 60px;
@@ -157,15 +158,15 @@
   }
 
   #btn-1:checked ~ .price__list {
-  transform: translate(0);
+    transform: translate(0);
   }
 
   #btn-2:checked ~ .price__list {
-  transform: translateX(-257px);
+    transform: translateX(-257px);
   }
 
   #btn-3:checked ~ .price__list {
-  transform: translate(-564px);
+    transform: translate(-564px);
   }
 
   #btn-1:checked ~ .price__controls label[for="btn-1"],
@@ -173,7 +174,7 @@
   #btn-3:checked ~ .price__controls label[for="btn-3"] {
     background-color: transparent;
     border: 3px solid #283645;
-}
+  }
 
   .price__description--vh-m {
     .visually-hidden;
@@ -184,7 +185,7 @@
   .price {
     padding: 94px 2px 68px;
 
-     &::after {
+    &::after {
       height: 70px;
     }
   }
@@ -234,7 +235,6 @@
 
   .price__hit {
     &::after {
-
       width: 61px;
       height: 61px;
 
@@ -247,8 +247,8 @@
       width: 61px;
       height: 61px;
 
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
     }
   }
 }
@@ -258,7 +258,7 @@
     padding: 156px 0 96px;
     margin-bottom: 65px;
 
-     &::after {
+    &::after {
       height: 100px;
     }
   }
