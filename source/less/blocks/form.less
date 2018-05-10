@@ -83,12 +83,13 @@
 .form__input {
   .size(280px; 63px);
   box-sizing: border-box;
-  padding: 20px;
+  padding: 16px 20px;
 
   font-family: inherit;
   .font(18px; 30px);
   color: @nav-color;
   border: 2px solid #e5e5e5;
+  border-radius: 3px;
 
 
   &:hover {
@@ -210,8 +211,6 @@
 }
 
 .form__text-emotion::-webkit-input-placeholder {
-  padding-top: 11px;
-  padding-left: 17px;
   color: @nav-color;
 }
 
@@ -226,15 +225,6 @@
 .form__send {
   .btn-form;
   margin-bottom: 28px;
-
-  &:hover {
-    background-color: #1c9b5e;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    outline: none;
-  }
 }
 
 .form__ps {

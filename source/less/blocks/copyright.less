@@ -13,14 +13,18 @@
 }
 
 .copyright__logo {
- &:hover {
-    fill: #000000;
+  fill: @important;
+
+  &:hover {
+    fill: @nav-color;
   }
 
   &:active {
+    fill: @nav-color;
     opacity: 0.3;
   }
 }
+
 @media (min-width: @desktop-width) {
   .copyright__text {
     .font(18px; 18px);

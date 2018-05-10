@@ -32,6 +32,10 @@
   }
 }
 
+.contest__vh {
+  display: none;
+}
+
 .contest__description {
   width: 274px;
   padding: 0 2px;
@@ -41,10 +45,6 @@
   .font(14px; 30px);
   color: @nav-color;
   text-align: center;
-
-  &--vh {
-    display: none;
-  }
 
   &--pos {
     margin-bottom: 33px;
@@ -73,15 +73,15 @@
     }
   }
 
+  .contest__vh {
+    display: inline;
+  }
+
   .contest__description {
     width: 440px;
     margin: 90px auto 77px;
 
     .font(18px; 30px);
-
-    &--vh {
-      display: inline;
-    }
 
     &--pos {
       width: 490px;

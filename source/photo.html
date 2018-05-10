@@ -19,12 +19,9 @@
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
         <div class="page-header__logo-wrapper">
-            <a class="page-header__logo" href="index.html"><span class="visually-hidden">Pink</span>
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22">
-              </picture>
+            <a class="page-header__logo" href="index.html">
+              <span class="visually-hidden">Pink</span>
+              <svg class="page-header__logo-svg" width="150" height="44""><use xlink:href="#logo-pink-white-desktop-sprite"></use></svg>
             </a>
           </div>
           <nav class="site-list">
@@ -222,10 +219,10 @@
               <div class="photo-upload__nav">
                 <ul class="photo-upload__items">
                   <li class="photo-upload__item">
-                    <a class="photo-upload__editor photo-upload__editor--active" href="#">  <span class="visually-hidden">Обрезать</span>
+                    <a class="photo-upload__editor photo-upload__editor--active" href="#"><span class="visually-hidden">Обрезать</span>
                       <svg class="photo-upload__editor-icon" width="48px" height="48px"><use xlink:href="#icon-editor-crop-sprite"></use></svg>
                     </a>
-                    <p class="photo-upload__line"><span class="photo-upload__slider photo-upload__slider--cut"></span></p>
+                    <p class="photo-upload__line photo-upload__line--active"><span class="photo-upload__slider photo-upload__slider--cut"></span></p>
                   </li>
                   <li class="photo-upload__item">
                     <a class="photo-upload__editor" href="#">
@@ -240,8 +237,6 @@
                       <svg class="photo-upload__editor-icon photo-upload__editor-icon--size"  width="32px" height="32px"><use xlink:href="#icon-editor-contrast-sprite"></use></svg>
                     </a>
                     <p class="photo-upload__line"><span class="photo-upload__slider photo-upload__slider--bright"></span></p>
-                  </li>
-                  <li class="photo-upload__general-slider"><span class="photo-upload__ball">
                   </li>
                 </ul>
                 <ul class="photo-upload__list">

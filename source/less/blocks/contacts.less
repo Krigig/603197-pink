@@ -44,13 +44,26 @@
   font-size: 24px;
   color: @important;
   font-weight: 300;
-}
 
-.contacts__phone {
-  .link;
-  font-size: 24px;
-  color: @important;
-  font-weight: 300;
+  &--phone {
+    .link;
+  }
+
+  &--mail {
+    cursor: pointer;
+     .link;
+  }
+
+  &--mail:hover {
+    color: @nav-color;
+    text-decoration: underline;
+  }
+
+  &--mail:active {
+    color: @nav-color;
+    opacity: 0.3;
+    text-decoration: none;
+  }
 }
 
 .contacts__map {

@@ -20,12 +20,9 @@
       <div class="page-header__container">
         <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo" href="index.html"><span class="visually-hidden">Pink</span>
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22">
-              </picture>
+            <a class="page-header__logo" href="index.html">
+              <span class="visually-hidden">Pink</span>
+              <svg class="page-header__logo-svg" width="150" height="44""><use xlink:href="#logo-pink-white-desktop-sprite"></use></svg>
             </a>
           </div>
           <nav class="site-list">
@@ -53,7 +50,7 @@
         <div class="contest__wrapper">
           <h1 class="contest__intro contest__intro--pos">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
-        <p class="contest__description contest__description--pos">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="contest__description--vh"> Пожалуйста, заполните форму ниже:</span></p>
+        <p class="contest__description contest__description--pos">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="contest__vh"> Пожалуйста, заполните форму ниже:</span></p>
       </section>
       <section class="form">
         <form class="form__field" method="post" action="https://echo.htmlacademy.ru">
@@ -120,11 +117,11 @@
             <ul class="form__items form__items--contacts">
               <li class="form__item form__item--contacts form__item--phone">
                 <label class="form__title" for="user-tel">Номер телефона</label>
-                <input class="form__input" id="user-tel" type="text" name="login" placeholder="Номер, пожалуйста">
+                <input class="form__input" id="user-tel" type="tel" name="login" placeholder="Номер, пожалуйста">
               </li>
               <li class="form__item form__item--contacts form__item--mail">
                 <label class="form__title" for="user-email">Адрес почты</label>
-                <input class="form__input" id="user-email" type="text" name="login" placeholder="Введите почту*">
+                <input class="form__input" id="user-email" type="email" name="login" placeholder="Введите почту*">
               </li>
             </ul>
           </fieldset>

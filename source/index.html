@@ -19,12 +19,9 @@
     <header class="page-header">
       <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
           <div class="page-header__logo-wrapper">
-            <a class="page-header__logo"><span class="visually-hidden">Pink</span>
-              <picture>
-                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img alt="Pink" src="img/logo-pink-white-mobile.svg" width="75" height="22">
-              </picture>
+            <a class="page-header__logo">
+              <span class="visually-hidden">Pink</span>
+              <svg class="page-header__logo-svg" width="150" height="44""><use xlink:href="#logo-pink-white-desktop-sprite"></use></svg>
             </a>
           </div>
           <nav class="site-list">
@@ -69,13 +66,13 @@
             <a class="app__btn" href="#">Скачать приложение</a>
             <ul class="app__systems systems">
               <li class="systems__item systems__item--apl">
-                <a class="systems__link" href="#"><span class="visually-hidden">Apple</span><img src="img/logo-apple.svg" width="46.21px" height="56.753px"></a>
+                <a class="systems__link" href="#"><span class="visually-hidden">Apple</span><img src="img/logo-apple.svg" width="46" height="57" alt="Apple"></a>
               </li>
               <li class="systems__item systems__item--and">
-                <a class="systems__link" href="#"><span class="visually-hidden">Android</span><img src="img/logo-android.svg" width="42.084px" height="47.041px"></a>
+                <a class="systems__link" href="#"><span class="visually-hidden">Android</span><img src="img/logo-android.svg" width="42" height="47" alt="Android"></a>
               </li>
               <li class="systems__item systems__item--win">
-                <a class="systems__link" href="#"><span class="visually-hidden">Windows</span><img src="img/logo-microsoft.svg" width="43.922px" height="41.992px"></a>
+                <a class="systems__link" href="#"><span class="visually-hidden">Windows</span><img src="img/logo-microsoft.svg" width="44" height="42" alt="Windows"></a>
               </li>
             </ul>
             <p class="app__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -107,25 +104,22 @@
             <ul class="proposal__imgs">
               <li>
                 <picture>
-
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
 
                   <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
-                  <img class="proposal__img proposal__img--vh" alt="Всем привет!">
+                  <img class="proposal__img proposal__img--vh" alt="Всем привет!" src="#">
                 </picture>
               </li>
               <li>
                 <picture>
-
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
 
                   <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
-                  <img class="proposal__img proposal__img--vh" alt="Всем привет!">
+                  <img class="proposal__img proposal__img--vh" alt="Всем привет!" src="#">
                 </picture>
               </li>
               <li>
                 <picture>
-
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x">
@@ -157,9 +151,9 @@
             <a class="reivew__right-btn" href="#"><span class="visually-hidden">Следующий слайд</span></a>
           </div>
           <div class="reivew__see">
-            <input type="radio" id="re-btn-1" name="toggle-1" checked>
-            <input type="radio" id="re-btn-2" name="toggle-1">
-            <input type="radio" id="re-btn-3" name="toggle-1">
+            <input class="reivew__btn-1" type="radio" id="re-btn-1" name="toggle-1" checked>
+            <input class="reivew__btn-2" type="radio" id="re-btn-2" name="toggle-1">
+            <input class="reivew__btn-3" type="radio" id="re-btn-3" name="toggle-1">
             <div class="reivew__controls">
               <label for="re-btn-1"></label>
               <label for="re-btn-2"></label>
@@ -189,9 +183,9 @@
         <div class="price__wrapper">
           <h2 class="visually-hidden">Пакеты услуг и цены</h2>
           <div class="price__see">
-            <input type="radio" id="btn-1" name="toggle">
-            <input type="radio" id="btn-2" name="toggle" checked>
-            <input type="radio" id="btn-3" name="toggle">
+            <input class="price__btn-1" type="radio" id="btn-1" name="toggle">
+            <input class="price__btn-2" type="radio" id="btn-2" name="toggle" checked>
+            <input class="price__btn-3" type="radio" id="btn-3" name="toggle">
             <div class="price__controls">
               <label for="btn-1"></label>
               <label for="btn-2"></label>
@@ -254,11 +248,11 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <h3 class="contacts__title">Звоните:</h3>
-              <a class="contacts__phone" href="tel">+7 (812) 555-66-66</a>
+              <a class="contacts__description contacts__description--phone" href="tel">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item contacts__item--order">
               <h3 class="contacts__title">Пишите:</h3>
-              <p class="contacts__description">mail@htmlacademy.ru</p>
+              <a class="contacts__description contacts__description--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
               <h3 class="contacts__title">Приезжайте в гости:</h3>

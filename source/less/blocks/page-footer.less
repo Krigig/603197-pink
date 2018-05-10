@@ -7,7 +7,7 @@
   justify-content: space-between;
 
   margin-top: 40px;
-  margin-bottom: 160px;
+  margin-bottom: 30px;
 
   &--index {
     display: none;
@@ -15,11 +15,14 @@
 }
 
 .page-footer__logo {
+  fill: @nav-color;
+
   &:hover {
     fill: @important;
   }
 
   &:active {
+    fill: @nav-color;
     opacity: 0.3;
   }
 }
@@ -43,13 +46,12 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    min-height: 55px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
 
     margin-top: 0;
     padding-top: 20px;
-    padding-bottom: 160px;
 
     &--index {
       display: flex;

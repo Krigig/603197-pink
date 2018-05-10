@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-.site-list .site-list__link {
+.site-list__link {
   &:hover {
     color: @important;
   }
@@ -147,6 +147,11 @@
     .font(18px; 18px);
     color: @font-color;
     .link;
+
+    &:active {
+      color: @font-color;
+      opacity: 0.3;
+    }
 
     &--active {
       position: relative;
