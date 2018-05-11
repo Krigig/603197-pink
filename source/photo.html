@@ -5,6 +5,9 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
       // Picture element HTML5 shiv
@@ -53,10 +56,8 @@
       <section class="photo">
         <h2 class="visually-hidden">Фотогалерея</h2>
         <div class="photo__panorama">
-          <p class="photo__panorama-day">Панорама дня</p>
-          <a class="photo__link photo__link--panorama" href="#">
+          <a class="photo__link photo__link--panorama photo__link--panorama-day" href="#">
             <picture>
-
               <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/panorama-mobile@1x.webp, img/panorama-mobile@2x.webp 2x">
@@ -80,7 +81,6 @@
           <li class="photo__item">
               <a class="photo__link" href="#">
                 <picture>
-
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/photo-car-mobile@1x.webp, img/photo-car-mobile@2x.webp 2x">
@@ -220,7 +220,7 @@
                     <a class="photo-upload__editor photo-upload__editor--active" href="#"><span class="visually-hidden">Обрезать</span>
                       <svg class="photo-upload__editor-icon" width="48px" height="48px"><use xlink:href="#icon-editor-crop-sprite"></use></svg>
                     </a>
-                    <p class="photo-upload__line photo-upload__line--active"><span class="photo-upload__slider photo-upload__slider--cut"></span></p>
+                    <p class="photo-upload__line photo-upload__line--active"><span class="photo-upload__slider photo-upload__slider--cut photo-upload__slider--active"></span></p>
                   </li>
                   <li class="photo-upload__item">
                     <a class="photo-upload__editor" href="#">
