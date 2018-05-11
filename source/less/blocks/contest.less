@@ -12,14 +12,14 @@
   background-color: @app-background;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-    }
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .contest__intro {
   width: 230px;
   padding: 0 2px;
-  margin: 0 auto;
+  margin: 0;
   margin-top: 10px;
   text-align: center;
 
@@ -32,6 +32,10 @@
   }
 }
 
+.contest__vh {
+  display: none;
+}
+
 .contest__description {
   width: 274px;
   padding: 0 2px;
@@ -41,10 +45,6 @@
   .font(14px; 30px);
   color: @nav-color;
   text-align: center;
-
-  &--vh {
-    display: none;
-  }
 
   &--pos {
     margin-bottom: 33px;
@@ -59,9 +59,9 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
   }
-}
 
   .contest__intro {
     width: 480px;
@@ -73,15 +73,15 @@
     }
   }
 
+  .contest__vh {
+    display: inline;
+  }
+
   .contest__description {
     width: 440px;
     margin: 90px auto 77px;
 
     .font(18px; 30px);
-
-    &--vh {
-      display: inline;
-    }
 
     &--pos {
       width: 490px;
@@ -99,9 +99,9 @@
     background-position: 0 0;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
-}
 
   .contest__intro {
     width: 760px;

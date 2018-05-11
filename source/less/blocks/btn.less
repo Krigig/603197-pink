@@ -25,6 +25,21 @@
   border: none;
   border-radius: 5px;
   text-transform: uppercase;
+  outline: none;
 
   cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+
+  &--disabled {
+    color: @font-color;
+    background-color: #e5e5e5;
+  }
 }

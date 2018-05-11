@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-.site-list .site-list__link {
+.site-list__link {
   &:hover {
     color: @important;
   }
@@ -33,7 +33,7 @@
 
     background-color: transparent;
     outline: none;
-}
+  }
 
   .page-header__wrapper--closed .site-list__toggle::before {
     content: "";
@@ -50,8 +50,8 @@
   }
 
   .page-header__wrapper--closed .site-list__toggle:hover::before {
-   background-color: @important;
-   box-shadow: 0 10px 0 0 @important, 0 20px 0 0 @important;
+    background-color: @important;
+    box-shadow: 0 10px 0 0 @important, 0 20px 0 0 @important;
   }
 
   .page-header__wrapper--closed .site-list__toggle:active::before {
@@ -90,13 +90,13 @@
 
     &:hover::before,
     &:hover::after {
-     background-color: @important;
+      background-color: @important;
     }
 
     &:active::before,
     &:active::after {
-     opacity: 0.3;
-     background-color: @important;
+      opacity: 0.3;
+      background-color: @important;
     }
   }
 
@@ -113,7 +113,7 @@
     padding-top: 15px;
 
     .font(18px; 32px);
-   text-transform: uppercase;
+    text-transform: uppercase;
 
     color: @font-color;
     .link;
@@ -126,72 +126,6 @@
     top: 53px;
   }
 
-  .site-list__toggle {
-    top: 44px;
-  }
-
-  .page-header__wrapper--opened .site-list__toggle {
-    top: 30px;
-    right: 20px;
-
-    width: 25px;
-    height: 24px;
-
-    &::before,
-    &::after {
-      content: "";
-
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      width: 36px;
-      height: 4px;
-
-      background-color: #ffffff;
-    }
-
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
-
-    &:hover::before,
-    &:hover::after {
-     background-color: @important;
-    }
-
-    &:focus::before,
-    &:focus::after {
-     opacity: 0.3;
-    }
-  }
-
-  .site-list__item {
-    .size(100%; 62px);
-
-    border-bottom: 1px solid rgb(0, 0, 0);
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-  }
-
-  .site-list__link {
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
-
-    .font(18px; 32px);
-   text-transform: uppercase;
-
-    color: @font-color;
-    .link;
-    font-weight: bold;
-  }
-}
-
-@media (min-width: @tablet-width) {
   .site-list__toggle {
     top: 44px;
   }
@@ -213,6 +147,11 @@
     .font(18px; 18px);
     color: @font-color;
     .link;
+
+    &:active {
+      color: @font-color;
+      opacity: 0.3;
+    }
 
     &--active {
       position: relative;

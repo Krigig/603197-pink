@@ -5,7 +5,9 @@
 *.pdf
 *.psd
 *.sublime*
+js/picturefill.min.js
 node_modules/
+build/
 npm-debug.*
 source/css/*.css
 Thumbs.db
