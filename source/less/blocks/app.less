@@ -11,12 +11,12 @@
   background-size: cover;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
-    }
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .app__container {
-  min-height: 186px;
+  height: 274px;
 }
 
 .app__description {
@@ -41,6 +41,7 @@
 
 .app__intro {
   margin: 0;
+  width: 233px;
 
   .font(14px; 24px);
   font-weight: 300;
@@ -48,7 +49,7 @@
 }
 
 .app__info {
-  min-height: 213px;
+  height: 213px;
   padding-bottom: 30px;
   color: @font-color;
 
@@ -72,7 +73,7 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
@@ -81,7 +82,7 @@
   }
 
   .app__container {
-    min-height: 730px;
+    height: 730px;
 
     display: flex;
     flex-direction: row;
@@ -93,7 +94,7 @@
   .app__info {
     width: 300px;
     padding: 0;
-    min-height: 415px;
+    height: 415px;
     margin-bottom: 110px;
     order: -1;
 
@@ -119,6 +120,7 @@
   }
 
   .app__intro {
+    width: 300px;
     .font(18px; 24px);
   }
 }
@@ -129,7 +131,7 @@
     background-repeat: no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
@@ -138,7 +140,7 @@
   }
 
   .app__info {
-    min-height: 515px;
+    height: 515px;
     margin-bottom: 120px;
   }
 
@@ -159,7 +161,7 @@
     margin: 0;
   }
 
-  .app__btn{
+  .app__btn {
     .font(21px; 18px)
   }
 }

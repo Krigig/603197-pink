@@ -19,10 +19,27 @@
   border-radius: 50%;
 
   &--youtube {
+    padding-top: 15px;
     padding-left: 17px;
+  }
+
+  &--facebook {
+    padding-left: 18px;
+  }
+
+  &:hover {
+    border-color: #000000;
+  }
+
+  &:active {
+    border-color: #e9ebec;
+    opacity: 0.3;
   }
 }
 
+.social__item svg {
+  fill: @important;
+}
 
 @media (min-width: @tablet-width) {
   .social__list {
@@ -33,7 +50,7 @@
 
 @media (min-width: @desktop-width) {
   .social__list {
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: 9px;
   }
 }

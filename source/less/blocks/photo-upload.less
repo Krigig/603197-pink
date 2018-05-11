@@ -87,18 +87,30 @@
   width: 100%;
 }
 
+.photo-upload__editor-icon {
+  fill: #b5b9be;
+}
+
 .photo-upload__editor {
+  &:hover .photo-upload__editor-icon {
+    fill: #8d949b;
+  }
+
   &--active .photo-upload__editor-icon {
     fill: @important;
   }
 
-  &:hover .photo-upload__editor-icon {
-    fill: #8d949b;
+  &--active:hover .photo-upload__editor-icon {
+    fill: @important;
   }
 }
 
 .photo-upload__line {
   display: none;
+
+  &--active {
+    display: inline;
+  }
 }
 
 @media (max-width: @tablet-width) {
@@ -119,7 +131,7 @@
     }
   }
 
-  .photo-upload__general-slider {
+  .photo-upload__line--active {
     content: "";
 
     position: absolute;
@@ -129,10 +141,10 @@
     width: 240px;
     height: 2px;
 
-    background-color: #283645;
+    background-color: @nav-color;
   }
 
-  .photo-upload__ball {
+  .photo-upload__slider--cut {
     content: "";
 
     position: absolute;
@@ -145,8 +157,11 @@
 
     border: 2px solid @important;
     border-radius: 50%;
-  }
 
+    &:active {
+      background-color: @important;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -154,7 +169,7 @@
     margin-bottom: 13px;
   }
 
-  .photo-upload__intro-wrapper  {
+  .photo-upload__intro-wrapper {
     margin: 45px auto 70px;
   }
 
@@ -256,14 +271,14 @@
     &--bright {
       right: 92px;
     }
+
+    &:active {
+      background-color: @important;
+    }
   }
 
   .photo-upload__general-slider {
     display: none;
-  }
-
-  .photo-upload__editor-icon {
-    fill: @important;
   }
 
   .photo-upload__list {
@@ -275,10 +290,12 @@
     height: 24px;
     padding-left: 5px;
 
+    fill: @important;
+
     &--size {
       width: 17px;
       height: 17px;
-      padding-top: 0px;
+      padding-top: 0;
       padding-left: 10px;
     }
   }
@@ -287,6 +304,7 @@
 @media (min-width: @desktop-width) {
   .photo-upload__form {
     background-color: transparent;
+    margin-bottom: 35px;
   }
 
   .photo-upload__wrapper {
@@ -350,10 +368,6 @@
   .photo-upload__intro-wrapper {
     margin-top: 5px;
     margin-bottom: 67px;
-  }
-
-  .photo-upload__form {
-    margin-bottom: 35px;
   }
 
   .photo-upload__editor-icon {

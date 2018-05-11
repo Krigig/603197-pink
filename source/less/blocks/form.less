@@ -10,6 +10,8 @@
 
   &--bg-color {
     width: 100%;
+
+    padding: 0;
     margin-top: 25px;
     margin-bottom: 30px;
     background-color: @main-bg-color;
@@ -35,7 +37,7 @@
 .form__block--app .form__item {
   margin-bottom: 45px;
 
-   &:last-child {
+  &:last-child {
     margin-bottom: 45px;
   }
 }
@@ -43,6 +45,7 @@
 .form__caption {
   padding: 40px;
   padding-bottom: 42px;
+  margin: 0 auto;
   width: 100%;
   text-align: center;
 
@@ -80,12 +83,13 @@
 .form__input {
   .size(280px; 63px);
   box-sizing: border-box;
-  padding: 20px;
+  padding: 16px 20px;
 
   font-family: inherit;
   .font(18px; 30px);
   color: @nav-color;
   border: 2px solid #e5e5e5;
+  border-radius: 3px;
 
 
   &:hover {
@@ -133,7 +137,8 @@
   height: 35px;
   background-size: 70%;
 
-  background-image: url("../img/icon-yes.svg");
+
+  background-image: url("../img/icon-yes-pink.svg");
   background-repeat: no-repeat;
   background-position: 6px 8px;
   fill: @important;
@@ -183,7 +188,10 @@
 
 .form__text-emotion {
   display: block;
-  .min-size(271px; 192px);
+
+  padding-top: 11px;
+  padding-left: 17px;
+  .size(271px; 192px);
   resize: none;
   margin-bottom: 49px;
 
@@ -203,8 +211,6 @@
 }
 
 .form__text-emotion::-webkit-input-placeholder {
-  padding-top: 11px;
-  padding-left: 17px;
   color: @nav-color;
 }
 
@@ -219,15 +225,6 @@
 .form__send {
   .btn-form;
   margin-bottom: 28px;
-
-  &:hover {
-    background-color: #1c9b5e;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    outline: none;
-  }
 }
 
 .form__ps {
@@ -344,46 +341,6 @@
     flex-direction: row;
     align-items: center;
 
-    &:last-child {
-      margin-bottom: 59px;
-    }
-
-    &--contacts {
-      padding-left: 55px;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      align-content: center;
-    }
-    &--contacts:last-child {
-      margin-bottom: 26px;
-    }
-  }
-
-  .form__block--app .form__item {
-    margin-bottom: 45px;
-
-    &:last-child {
-      margin-bottom: 59px;
-  }
-}
-
-  .form__block--app .form__items {
-    padding-top: 49px;
-    padding-left: 55px;
-  }
-
-  .form__value {
-    padding-left: 60px;
-  }
-
-  .form__input {
-    margin-left: 20px;
-    flex-grow: 1;
-  }
-
-  .form__item {
     position: relative;
 
     &--phone::after {
@@ -394,7 +351,7 @@
       right: 59px;
 
       width: 62px;
-      height: 62px;
+      height: 63px;
 
       background-image: url("../img/icon-phone.svg");
       background-color: @border-color;
@@ -410,13 +367,53 @@
       right: 59px;
 
       width: 62px;
-      height: 62px;
+      height: 63px;
+
 
       background-image: url("../img/icon-mail.svg");
       background-color: @border-color;
       background-repeat: no-repeat;
       background-position: 50% 50%;
     }
+
+    &:last-child {
+      margin-bottom: 59px;
+    }
+
+    &--contacts {
+      padding-left: 55px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+    }
+
+    &--contacts:last-child {
+      margin-bottom: 26px;
+    }
+  }
+
+  .form__block--app .form__item {
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 59px;
+    }
+  }
+
+  .form__block--app .form__items {
+    padding-top: 49px;
+    padding-left: 55px;
+  }
+
+  .form__value {
+    padding-left: 60px;
+  }
+
+  .form__input {
+    margin-left: 20px;
+    flex-grow: 1;
   }
 
   .form__item--contacts .form__title {
@@ -425,13 +422,15 @@
     padding-top: 10px;
     padding-left: 20px;
 
+    padding-right: 30px;
+
     text-align: left;
   }
 
   .form__item--contacts .form__input {
-    width: 500px;
-    flex-grow: 0;
+    width: 436px;
     margin-left: 0;
+    flex-grow: 0;
 
     position: relative;
   }
@@ -475,6 +474,7 @@
     margin: 0;
 
     &--grow {
+      width: 100%;
       flex-grow: 1;
       margin-bottom: 57px;
     }
@@ -484,7 +484,7 @@
     }
 
     &--border {
-     margin-top: 14px;
+      margin-top: 14px;
     }
 
     &--emotion {
@@ -519,19 +519,17 @@
   }
 
   .form__item--contacts .form__input {
-    width: 375px;
+    width: 315px;
+    box-sizing: border-box;
   }
 
   .form__item {
-    &--contacts {
-
+    &--phone::after {
+      right: 18px;
     }
 
-     &--phone::after {
-      right: 15px;
-    }
     &--mail::after {
-      right: 0;
+      right: -5px;
     }
   }
 
@@ -558,7 +556,7 @@
 
   .form__text-emotion {
     width: 820px;
-    min-height: 125px;
+    height: 125px;
     box-sizing: border-box;
     margin: 35px 56px;
     margin-bottom: 42px;
