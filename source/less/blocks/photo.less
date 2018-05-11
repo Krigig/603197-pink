@@ -39,7 +39,7 @@
 .photo__text {
   margin: 0;
 
-  font-weight: 300;
+  font-weight: normal;
 }
 
 .photo__author-name {
@@ -150,6 +150,8 @@
   }
 
   .photo__panorama {
+    width: @tablet-width;
+    margin: 0 auto;
     margin-bottom: 50px;
   }
 
@@ -209,7 +211,7 @@
   }
 
   .photo__panorama-day {
-    left: 72%;
+    left: 500px;
     top: 57px;
   }
 }
@@ -222,6 +224,15 @@
     &--panorama {
       height: 506px;
     }
+  }
+
+  .photo__panorama {
+    width: 100%;
+  }
+
+  .photo__panorama-day {
+    left: 928px;
+    top: 53px;
   }
 
   .photo__item {

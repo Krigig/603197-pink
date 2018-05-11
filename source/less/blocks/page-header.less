@@ -23,7 +23,7 @@
 
 .page-header__logo-glass,
 .page-header__logo-star {
-    display: none;
+  display: none;
 }
 
 .page-header__logo-container {
@@ -60,10 +60,12 @@
   }
 
   .page-header__wrapper--opened {
-    background-color: @nav-color;
-
     width: 100%;
-    z-index: 11;
+    position: relative;
+    top: 70px;
+    margin-top: -70px;
+
+    background-color: @nav-color;
   }
 
   .page-header__wrapper--nojs .site-list__toggle {
@@ -82,6 +84,13 @@
     position: static;
     background-color: @nav-color;
     border-bottom: 1px solid rgb(0, 0, 0);
+  }
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .page-header__wrapper--opened {
+    top: 112px;
+    margin-top: -112px;
   }
 }
 

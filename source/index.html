@@ -5,7 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
@@ -21,7 +21,7 @@
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo">
               <span class="visually-hidden">Pink</span>
-              <svg class="page-header__logo-svg" width="150" height="44""><use xlink:href="#logo-pink-white-desktop-sprite"></use></svg>
+              <svg class="page-header__logo-svg" width="150" height="44"><use xlink:href="#logo-pink-white-desktop-sprite"></use></svg>
             </a>
           </div>
           <nav class="site-list">
@@ -63,16 +63,16 @@
           </picture>
           <div class="app__info">
             <p class="app__description">Взгляните на жизнь иначе!</p>
-            <a class="app__btn" href="#">Скачать приложение</a>
+            <a class="app__btn" href="https://itunes.apple.com/ru/genre/ios/id36?mt=8">Скачать приложение</a>
             <ul class="app__systems systems">
               <li class="systems__item systems__item--apl">
-                <a class="systems__link" href="#"><span class="visually-hidden">Apple</span><img src="img/logo-apple.svg" width="46" height="57" alt="Apple"></a>
+                <a class="systems__link" href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">Apple</span><img src="img/logo-apple.svg" width="46" height="57" alt="Apple"></a>
               </li>
               <li class="systems__item systems__item--and">
-                <a class="systems__link" href="#"><span class="visually-hidden">Android</span><img src="img/logo-android.svg" width="42" height="47" alt="Android"></a>
+                <a class="systems__link" href="https://play.google.com/store"><span class="visually-hidden">Android</span><img src="img/logo-android.svg" width="42" height="47" alt="Android"></a>
               </li>
               <li class="systems__item systems__item--win">
-                <a class="systems__link" href="#"><span class="visually-hidden">Windows</span><img src="img/logo-microsoft.svg" width="44" height="42" alt="Windows"></a>
+                <a class="systems__link" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone"><span class="visually-hidden">Windows</span><img src="img/logo-microsoft.svg" width="44" height="42" alt="Windows"></a>
               </li>
             </ul>
             <p class="app__intro">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -200,39 +200,21 @@
               </tr>
               <tr>
                 <td class="price__description price__description--vh-m">Розовый фильтр</td>
-                <td class="price__description"><span class="price__description-vh">Розовый фильтр</span>
-                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
-                </td>
-                <td class="price__description"><span class="price__description-vh">Розовый фильтр</span>
-                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
-                </td>
-                <td class="price__description"><span class="price__description-vh">Розовый фильтр</span>
-                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
-                </td>
+                <td class="price__description yes"><span class="price__description-vh">Розовый фильтр</span></td>
+                <td class="price__description yes"><span class="price__description-vh">Розовый фильтр</span></td>
+                <td class="price__description yes"><span class="price__description-vh">Розовый фильтр</span></td>
               </tr>
               <tr>
                 <td class="price__description price__description--vh-m">Смайлики</td>
-                <td class="price__description"><span class="price__description-vh">Смайлики</span>
-                  <svg class="price__no" width="29px" height="27px"><use xlink:href="#icon-no-sprite"></use></svg>
-                </td>
-                <td class="price__description"><span class="price__description-vh">Смайлики</span>
-                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
-                </td>
-                <td class="price__description"><span class="price__description-vh">Смайлики</span>
-                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
-                </td>
+                <td class="price__description no"><span class="price__description-vh">Смайлики</span></td>
+                <td class="price__description yes"><span class="price__description-vh">Смайлики</span></td>
+                <td class="price__description yes"><span class="price__description-vh">Смайлики</span></td>
               </tr>
               <tr>
                 <td class="price__description price__description--vh-m">Комментарии</td>
-                <td class="price__description"><span class="price__description-vh">Комментарии</span>
-                  <svg class="price__no" width="29px" height="27px"><use xlink:href="#icon-no-sprite"></use></svg>
-                </td>
-                <td class="price__description"><span class="price__description-vh">Комментарии</span>
-                  <svg class="price__no" width="29px" height="27px"><use xlink:href="#icon-no-sprite"></use></svg>
-                </td>
-                <td class="price__description"><span class="price__description-vh">Комментарии</span>
-                  <svg class="price__yes" width="33px" height="22px"><use xlink:href="#icon-yes-sprite"></use></svg>
-                </td>
+                <td class="price__description no"><span class="price__description-vh">Комментарии</span></td>
+                <td class="price__description no"><span class="price__description-vh">Комментарии</span></td>
+                <td class="price__description yes"><span class="price__description-vh">Комментарии</span></td>
               </tr>
             </table>
           </div>
@@ -254,7 +236,7 @@
               <h3 class="contacts__title">Пишите:</h3>
               <a class="contacts__description contacts__description--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
-            <li class="contacts__item">
+            <li class="contacts__item contacts__item">
               <h3 class="contacts__title">Приезжайте в гости:</h3>
               <p class="contacts__description">ул. Большая<br>Конюшенная, 19/8</p>
             </li>
