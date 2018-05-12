@@ -54,41 +54,39 @@
 }
 
 .photo__likes {
+  width: 125px;
   margin: 0;
-  padding-left: 50px;
+  padding-left: 17px;
   padding-bottom: 18px;
-
-  position: relative;
 
   .font(12px; 24px);
   color: @important;
   font-weight: normal;
   text-transform: uppercase;
 
+  display: flex;
+  justify-content: space-between;
+
   &--panorama {
     padding: 10px 0;
-    padding-left: 30px;
-  }
-
-  &::after {
-    content: "";
-
-    width: 15px;
-    height: 13px;
-
-    position: absolute;
-    top: 5px;
-    left: 18px;
-
-    background-image: url("../img/icon-heart.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    padding-left: 17px;
   }
 }
 
-.photo__likes--panorama::after {
-  top: 15px;
-  left: 0;
+.photo__icon-heart {
+  fill: @important;
+}
+
+.photo__heart-button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.photo__likes-sum {
+  order: 2;
 }
 
 .photo__panorama {
@@ -183,24 +181,25 @@
   }
 
   .photo__likes {
+    width: 243px;
     margin: 0;
     padding: 0 26px;
     padding-bottom: 22px;
     align-self: flex-end;
 
-    &::after {
-      left: 253px;
+    &--panorama {
+      width: 121px;
+      padding: 0;
     }
   }
 
-  .photo__likes--panorama {
-    padding: 0;
-    padding-right: 35px;
+  .photo__icon-heart {
+    width: 14px;
+    height: 13px;
+  }
 
-    &::after {
-      left: 105px;
-      top: 5px;
-    }
+  .photo__likes-sum {
+    order: 0;
   }
 
   .photo__link {
@@ -237,7 +236,7 @@
   }
 
   .photo__likes--panorama {
-    padding-right: 40px;
+    padding-right: 6px;
   }
 
   .photo__post--panorama {
