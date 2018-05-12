@@ -56,7 +56,7 @@
       <section class="photo">
         <h2 class="visually-hidden">Фотогалерея</h2>
         <div class="photo__panorama">
-          <a class="photo__link photo__link--panorama photo__link--panorama-day" href="#">
+          <a class="photo__link photo__link--panorama" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -69,7 +69,7 @@
           </a>
           <div class="container">
             <div class="photo__wrapper">
-              <blockquote class="photo__post photo__post--panorama">
+              <blockquote class="photo__post photo__post--panorama photo__post--panorama-day">
                 <cite class="photo__author-name">Анна <span class="photo__time">(5 минут назад)</span></cite>
                 <p class="photo__text photo__text--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <p class="photo__likes photo__likes--panorama">Нравится: 215</p>
@@ -239,10 +239,10 @@
                 </ul>
                 <ul class="photo-upload__list">
                   <li>
-                    <button type="button" class="photo-upload__btn photo-upload__btn--send">Запостить</button>
+                    <button type="submit" class="photo-upload__btn photo-upload__btn--send">Запостить</button>
                   </li>
                   <li>
-                    <button type="button" class="photo-upload__btn photo-upload__btn--esc">Отмена</button>
+                    <button type="reset" class="photo-upload__btn photo-upload__btn--esc">Отмена</button>
                   </li>
                 </ul>
               </div>
@@ -253,8 +253,10 @@
     </main>
     <footer class="page-footer container">
       <div>
-        <span class="visually-hidden">Логотип Pink</span>
-        <svg class="page-footer__logo" width="146.3px" height="40.375px"><use xlink:href="#logo-pink-blue-mobile-sprite"></use></svg>
+        <a class="page-footer__logo-link" href="index.html">
+          <span class="visually-hidden">Логотип Pink</span>
+          <svg class="page-footer__logo" width="146.3px" height="40.375px"><use xlink:href="#logo-pink-blue-mobile-sprite"></use></svg>
+        </a>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">

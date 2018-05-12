@@ -73,7 +73,7 @@
   &::after {
     content: "";
 
-    width: 13px;
+    width: 15px;
     height: 13px;
 
     position: absolute;
@@ -105,22 +105,17 @@
   margin-right: auto;
   overflow: hidden;
 
-  color: @font-color;
-  text-transform: uppercase;
-  .font(12px; 24px);
-  font-weight: bold;
-
   &--panorama {
     height: 137px;
   }
 }
 
-.photo__link--panorama-day::after {
+.photo__post--panorama-day::after {
   content: "Панорама дня";
 
   position: absolute;
-  top: 0;
-  right: 20px;
+  top: -137px;
+  right: 0;
 
   width: 140px;
   height: 36px;
@@ -129,6 +124,11 @@
   box-sizing: border-box;
   text-align: center;
   padding-top: 5px;
+
+  color: @font-color;
+  text-transform: uppercase;
+  .font(12px; 24px);
+  font-weight: bold;
 
   z-index: 10;
 }
@@ -154,7 +154,7 @@
   .photo__panorama {
     width: @tablet-width;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 49px;
   }
 
   .photo__img {
@@ -212,8 +212,8 @@
     }
   }
 
-  .photo__link--panorama-day::after {
-    top: 57px;
+  .photo__post--panorama-day::after {
+    top: -452px;
   }
 }
 
@@ -229,11 +229,6 @@
 
   .photo__panorama {
     width: 100%;
-  }
-
-  .photo__link--panorama-day::after {
-    right: 78px;
-    top: 53px;
   }
 
   .photo__item {

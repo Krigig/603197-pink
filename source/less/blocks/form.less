@@ -108,6 +108,7 @@
 
 .form__input::-moz-placeholder {
   color: @nav-color;
+  opacity: 1;
 }
 
 .form__input:-ms-input-placeholder {
@@ -257,7 +258,7 @@
   display: none;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: @tablet-max-width) {
   .form__block--bg-color .form__items {
     .container;
   }
@@ -536,17 +537,17 @@
   }
 
   .form__item--contacts .form__input {
-    width: 315px;
+    width: calc(100% - 62px);
     box-sizing: border-box;
   }
 
   .form__item {
     &--phone::after {
-      right: 18px;
+      right: 0;
     }
 
     &--mail::after {
-      right: -5px;
+      right: 0;
     }
   }
 
