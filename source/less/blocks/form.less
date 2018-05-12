@@ -225,6 +225,7 @@
 
 .form__text-emotion::-moz-placeholder {
   color: @nav-color;
+  opacity: 1;
 }
 
 .form__text-emotion:-ms-input-placeholder {
@@ -281,6 +282,8 @@
   }
 
   .form__block {
+    padding-top: 7px;
+    margin-top: 7px;
     width: 620px;
     margin-bottom: 30px;
 
@@ -294,6 +297,8 @@
     }
 
     &--border {
+      padding-top: 0;
+      margin-top: 0;
       order: -3;
       border: none;
       margin-bottom: 0;
@@ -301,24 +306,24 @@
 
     &--app {
       order: -2;
-      margin-top: 0;
       margin-bottom: 55px;
     }
 
     &--contacts {
+      margin-top: 10px;
       order: -1;
       box-sizing: border-box;
     }
 
     &--checkbox {
-      margin-top: 28px;
+      margin-top: 35px;
     }
 
     &--emotion {
       width: 620px;
       box-sizing: border-box;
       margin: 0 auto;
-      margin-top: 30px;
+      margin-top: 38px;
       margin-bottom: 68px;
     }
   }
@@ -330,6 +335,10 @@
   .form__block--app .form__caption {
     padding: 0 32px;
     width: 385px;
+  }
+
+  .form__block--checkbox .form__caption {
+    width: 440px;
   }
 
   .form__caption {
@@ -508,6 +517,7 @@
       width: 100%;
       flex-grow: 1;
       margin-bottom: 57px;
+      margin-top: 10px;
     }
 
     &--app {
@@ -520,6 +530,7 @@
     }
 
     &--emotion {
+      margin-top: 7px;
       margin-bottom: 65px;
     }
   }
