@@ -46,7 +46,6 @@
   padding: 40px;
   padding-bottom: 42px;
   margin: 0 auto;
-  width: 100%;
   text-align: center;
 
 
@@ -262,6 +261,10 @@
   .form__block--bg-color .form__items {
     .container;
   }
+
+  .form__caption {
+    width: 100%;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -280,6 +283,8 @@
   .form__block {
     width: 620px;
     margin-bottom: 30px;
+
+    position: relative;
 
     border: 2px solid @border-color;
     background-color: transparent;
@@ -324,12 +329,20 @@
 
   .form__block--app .form__caption {
     padding: 0 32px;
+    width: 385px;
   }
 
   .form__caption {
-    width: auto;
     padding: 0 32px;
     text-align: center;
+
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #ffffff;
+    z-index: 2;
 
     &--vh {
       display: block;
@@ -499,6 +512,7 @@
 
     &--app {
       width: 428px;
+      margin-top: 10px;
     }
 
     &--border {
