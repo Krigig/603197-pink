@@ -46,7 +46,6 @@
   padding: 40px;
   padding-bottom: 42px;
   margin: 0 auto;
-  width: 100%;
   text-align: center;
 
 
@@ -108,6 +107,7 @@
 
 .form__input::-moz-placeholder {
   color: @nav-color;
+  opacity: 1;
 }
 
 .form__input:-ms-input-placeholder {
@@ -156,6 +156,10 @@
   border: 2px solid @important;
 }
 
+.form__value input[type="checkbox"]:focus + .form__checkbox-indicator {
+  border: 2px solid @nav-color;
+}
+
 .form__value input[type="radio"] + .form__radio-indicator {
   position: absolute;
   top: -6px;
@@ -188,6 +192,10 @@
     background-color: @important;
     border-radius: 50%;
   }
+}
+
+.form__value input[type="radio"]:focus + .form__radio-indicator {
+  border: 2px solid @nav-color;
 }
 
 .form__value input[type="radio"]:active + .form__radio-indicator {
@@ -225,6 +233,7 @@
 
 .form__text-emotion::-moz-placeholder {
   color: @nav-color;
+  opacity: 1;
 }
 
 .form__text-emotion:-ms-input-placeholder {
@@ -257,9 +266,13 @@
   display: none;
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: @tablet-max-width) {
   .form__block--bg-color .form__items {
     .container;
+  }
+
+  .form__caption {
+    width: 100%;
   }
 }
 
@@ -277,8 +290,12 @@
   }
 
   .form__block {
+    padding-top: 7px;
+    margin-top: 7px;
     width: 620px;
     margin-bottom: 30px;
+
+    position: relative;
 
     border: 2px solid @border-color;
     background-color: transparent;
@@ -288,6 +305,8 @@
     }
 
     &--border {
+      padding-top: 0;
+      margin-top: 0;
       order: -3;
       border: none;
       margin-bottom: 0;
@@ -295,24 +314,24 @@
 
     &--app {
       order: -2;
-      margin-top: 0;
       margin-bottom: 55px;
     }
 
     &--contacts {
+      margin-top: 10px;
       order: -1;
       box-sizing: border-box;
     }
 
     &--checkbox {
-      margin-top: 28px;
+      margin-top: 35px;
     }
 
     &--emotion {
       width: 620px;
       box-sizing: border-box;
       margin: 0 auto;
-      margin-top: 30px;
+      margin-top: 38px;
       margin-bottom: 68px;
     }
   }
@@ -323,12 +342,24 @@
 
   .form__block--app .form__caption {
     padding: 0 32px;
+    width: 385px;
+  }
+
+  .form__block--checkbox .form__caption {
+    width: 440px;
   }
 
   .form__caption {
-    width: auto;
     padding: 0 32px;
     text-align: center;
+
+    position: absolute;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #ffffff;
+    z-index: 2;
 
     &--vh {
       display: block;
@@ -494,10 +525,12 @@
       width: 100%;
       flex-grow: 1;
       margin-bottom: 57px;
+      margin-top: 10px;
     }
 
     &--app {
       width: 428px;
+      margin-top: 10px;
     }
 
     &--border {
@@ -505,6 +538,7 @@
     }
 
     &--emotion {
+      margin-top: 7px;
       margin-bottom: 65px;
     }
   }
@@ -536,17 +570,17 @@
   }
 
   .form__item--contacts .form__input {
-    width: 315px;
+    width: calc(100% - 62px);
     box-sizing: border-box;
   }
 
   .form__item {
     &--phone::after {
-      right: 18px;
+      right: 0;
     }
 
     &--mail::after {
-      right: -5px;
+      right: 0;
     }
   }
 
