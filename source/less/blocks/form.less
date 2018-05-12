@@ -156,6 +156,10 @@
   border: 2px solid @important;
 }
 
+.form__value input[type="checkbox"]:focus + .form__checkbox-indicator {
+  border: 2px solid @nav-color;
+}
+
 .form__value input[type="radio"] + .form__radio-indicator {
   position: absolute;
   top: -6px;
@@ -188,6 +192,10 @@
     background-color: @important;
     border-radius: 50%;
   }
+}
+
+.form__value input[type="radio"]:focus + .form__radio-indicator {
+  border: 2px solid @nav-color;
 }
 
 .form__value input[type="radio"]:active + .form__radio-indicator {
